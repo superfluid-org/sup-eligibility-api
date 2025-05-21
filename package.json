@@ -1,0 +1,48 @@
+{
+  "name": "sup-eligibility-api",
+  "version": "1.0.0",
+  "description": "Standalone API for checking eligibility status across different point systems",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
+    "test": "jest",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "dependencies": {
+    "@slack/webhook": "^7.0.5",
+    "axios": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "expiry-map": "^2.0.0",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.9.0",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0",
+    "p-memoize": "4.0.0",
+    "redis": "^4.6.8",
+    "viem": "^1.10.9",
+    "winston": "^3.10.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/jest": "^29.5.4",
+    "@types/morgan": "^1.9.4",
+    "@types/node": "^20.5.7",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "eslint": "^8.48.0",
+    "jest": "^29.6.4",
+    "prettier": "^3.0.2",
+    "ts-jest": "^29.1.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "license": "MIT"
+}

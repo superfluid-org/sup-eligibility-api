@@ -10,7 +10,6 @@ interface PointSystem {
   gdaPoolAddress: string;
   flowrate: bigint;
   totalUnits: number;
-  apiKey: string;
 }
 
 export function getStackApiKey(pointSystemId: number): string {
@@ -21,62 +20,63 @@ export function getStackApiKey(pointSystemId: number): string {
 // TODO: ensure gdaPoolAddress is correct for each point system
 // TODO: ensure flowrate is correct for each point system
 // Define point systems with their IDs and GDA pool addresses
+
 const pointSystems: PointSystem[] = [
   {
     id: 7691,
     name: 'Community Activations',
-    gdaPoolAddress: '0xB7d7331529dC6fb68CB602d9B738CabD84d3ae6d',
-    flowrate: 1607510288065843368n,
+    gdaPoolAddress: '0x036b477dc59f95d445c2bf1e61d522285960969e',
+    flowrate: 643004115226337429n,
     totalUnits: 0,
-    apiKey: process.env[`STACK_PROGRAM_API_KEY_${7691}`] || ''
   },
   {
     id: 7695,
     name: 'AlfaFrens',
-    gdaPoolAddress: '0x0ac6aCe504CF4583dE327808834Aaf8AA3294FE3',
-    flowrate: 1607510288065843621n,
+    gdaPoolAddress: '0x20e0d8d480317e5061631f177880d966be6d9da4',
+    flowrate: 643004115226337429n,
     totalUnits: 0,
-    apiKey: process.env[`STACK_PROGRAM_API_KEY_${7695}`] || ''
   },
   {
     id: 7696,
     name: 'SuperBoring 1st Wave',
-    gdaPoolAddress: '0xbeF36F4D3fC9b96A5eD5002a3308F768B44Cef7e',
-    flowrate: 1286008230452674897n,
+    gdaPoolAddress: '0xc5ec1bf1c362c16ca2c851df8b9b6c3891dfefa5',
+    flowrate: 643004115226337429n,
     totalUnits: 0,
-    apiKey: process.env[`STACK_PROGRAM_API_KEY_${7696}`] || ''
   },
   {
     id: 7703,
     name: 'Flow Guilds & Octant SQF',
-    gdaPoolAddress: '0xAAc36Fe22DC97C1942000A13a3967D8ef1aB11f4',
-    flowrate: 321502057613168724n,
+    gdaPoolAddress: '0x95185bd5f035ad12e27c307b800f5b51bd6a141c',
+    flowrate: 643004115226337429n,
     totalUnits: 0,
-    apiKey: process.env[`STACK_PROGRAM_API_KEY_${7703}`] || ''
   },
   {
     id: 7712,
     name: 'Payments & Distributions',
-    gdaPoolAddress: '0x5640003112EEaAd042D055D27072e8261d28FCe4',
-    flowrate: 902475598864699132n,
+    gdaPoolAddress: '0xfe29d64182f8a41a2ac5948dab86fb2ed5091c3f',
+    flowrate: 643004115226337429n,
     totalUnits: 0,
-    apiKey: process.env[`STACK_PROGRAM_API_KEY_${7712}`] || ''
   },
   {
     id: 7702,
     name: 'GoodDollar',
-    gdaPoolAddress: '0x17A9ca096295472b7Ae1ECe9c7C5ad8248B9FF3d',
+    gdaPoolAddress: '0xd7891da38a00261267d88ef09f9977e4a3588ff3',
     flowrate: 643004115226337429n,
     totalUnits: 0,
-    apiKey: process.env[`STACK_PROGRAM_API_KEY_${7702}`] || ''
   },
   {
     id: 7704,
     name: 'Giveth',
-    gdaPoolAddress: '0x17A9ca096295472b7Ae1ECe9c7C5ad8248B9FF3d',
+    gdaPoolAddress: '0xd5684fabc106301c9872d5e787feda728c9b8228',
     flowrate: 643004115226337429n,
     totalUnits: 0,
-    apiKey: process.env[`STACK_PROGRAM_API_KEY_${7704}`] || ''
+  },
+  {
+    id: 7692,
+    name: 'streme.fun',
+    gdaPoolAddress: '0x805fe231622ba70cf1c133c216f0c0dad5703113',
+    flowrate: 643004115226337429n,
+    totalUnits: 0,
   }
 ];
 
@@ -102,10 +102,11 @@ const config = {
   pointSystems,
   POINT_THRESHOLD: parseInt(process.env.POINT_THRESHOLD || '99', 10),
   POINTS_TO_ASSIGN: parseInt(process.env.POINTS_TO_ASSIGN || '99', 10),
-  COMMUNITY_ACTIVATION_ID: parseInt(process.env.COMMUNITY_ACTIVATION_ID || '7370', 10),
+  COMMUNITY_ACTIVATION_ID: parseInt(process.env.COMMUNITY_ACTIVATION_ID || '0', 10),
   THRESHOLD_TIME_PERIOD: parseInt(process.env.THRESHOLD_TIME_PERIOD || '3600', 10),
   THRESHOLD_MAX_USERS: parseInt(process.env.THRESHOLD_MAX_USERS || '100', 10),
-  
+  STACK_EVENT_ADD_POINTS_URL: process.env.STACK_EVENT_ADD_POINTS_URL || 'https://track.stack.so/event',
+
   // Authentication
   adminApiKey: process.env.ADMIN_API_KEY || 'admin_api_key',
   

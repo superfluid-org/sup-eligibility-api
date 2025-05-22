@@ -159,3 +159,5 @@
 {"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-21T17:14:27.288Z"}
 {"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-21T17:18:57.361Z"}
 {"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-21T17:18:57.362Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:15:13.852Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:15:13.856Z"}

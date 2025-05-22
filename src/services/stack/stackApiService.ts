@@ -8,8 +8,7 @@ import { halfDayCache } from '../../config/cache';
 import { formatEvents, FormattedStackEvents } from './formatUtils';
 import pMemoize from 'p-memoize';
 
-const COMMUNITY_ACTIVATION_ID = 7370;
-const { THRESHOLD_TIME_PERIOD } = config;
+const { COMMUNITY_ACTIVATION_ID, THRESHOLD_TIME_PERIOD, STACK_EVENT_ADD_POINTS_URL } = config;
 
 class StackApiService {
   private baseUrl: string;
@@ -92,7 +91,7 @@ class StackApiService {
    */
   async assignPoints(address: string, points: number, eventName: string = "universal_allocation"): Promise<boolean> {
     try {
-      const url = `https://track.stack.so/event`;
+      const url = STACK_EVENT_ADD_POINTS_URL;
       const uniqueId = `${eventName.toLowerCase().replace(/_/g, '-')}-${address.toLowerCase()}`;
       
       logger.info(`Assigning ${points} points to ${address} in point system ${COMMUNITY_ACTIVATION_ID}`);

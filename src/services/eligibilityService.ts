@@ -48,7 +48,7 @@ class EligibilityService {
       logger.error('Failed to get locker addresses', { error });
       logger.slackNotify(`Failed to get locker addresses for addresses: ${addresses.join(', ')}: ${error instanceof Error ? error.message : 'Unknown error'}`);
     }
-    
+
     logger.info("lockerAddresses in _checkEligibility: ", lockerAddresses);
     // Check claim status on blockchain
     let allClaimStatuses: Map<string, Map<number, bigint>> = new Map();
@@ -58,13 +58,13 @@ class EligibilityService {
       logger.error('Failed to get claim statuses', { error });
       logger.slackNotify(`Failed to get claim statuses for addresses: ${addresses.join(', ')}: ${error instanceof Error ? error.message : 'Unknown error'}`);
     }
-    
+
     // Fetch total units for each point system
     for (const pointSystem of config.pointSystems) {
       const totalUnits = await BlockchainService.getTotalUnitsMemoized(pointSystem.gdaPoolAddress);
       pointSystem.totalUnits = Number(totalUnits);
     }
-    
+
     // Combine the data for each address
     const results = addresses.map(address => {
       const eligibility: PointSystemEligibility[] = [];
@@ -76,11 +76,11 @@ class EligibilityService {
       // Process each point system
       config.pointSystems.forEach((pointSystem) => {
         const { id, name, gdaPoolAddress, flowrate, totalUnits } = pointSystem;
-        
+
         // Find allocation for this address
         const allocations = allAllocations.get(id) || [];
         const { points } = allocations.find(a => a?.accountAddress?.toLowerCase() === address.toLowerCase()) || { points: 0 };
-        
+
         let estimatedFlowRateBigInt = BigInt(0);
         const claimStatus = allClaimStatuses.get(address)?.get(id);
         const amountToClaimBigInt = BigInt(points) - (claimStatus || BigInt(0));
@@ -91,7 +91,7 @@ class EligibilityService {
         if (totalUnits > 0) {
           const totalUnitsBigInt = BigInt(totalUnits + amountToClaim);
           const pointsBigInt = BigInt(points);
-          
+
           // Calculation: (points / totalUnits) * flowrate
           const scaleFactor = BigInt(1000000000); // 10^9 for precision
           estimatedFlowRateBigInt = (pointsBigInt * scaleFactor / totalUnitsBigInt) * flowrate / scaleFactor;
@@ -111,21 +111,21 @@ class EligibilityService {
           // Store as string to preserve precision
           estimatedFlowRate: estimatedFlowRateBigInt.toString()
         };
-        
+
         // Add eligibility data
         eligibility.push(obj);
-        
+
         if (needToClaim) {
           claimNeeded = true;
         }
-        
+
         if (points > 0) {
           hasAllocations = true;
         }
       });
-      
+
       logger.slackNotify(`Refreshed data for ${address} from stack.so`, 'info');
-      
+
       return {
         address,
         hasAllocations,
@@ -146,7 +146,7 @@ class EligibilityService {
   private checkEligibilityMemoized = async (addresses: string[]): Promise<AddressEligibility[]> => {
     // Create a cache key for each individual address and check
     const results = await Promise.all(
-      addresses.map(address => 
+      addresses.map(address =>
         pMemoize(this._checkEligibility.bind(this), {
           cache: halfDayCache,
           cacheKey: () => `check-eligibility-${address.toLowerCase()}`
@@ -164,7 +164,7 @@ class EligibilityService {
   private async autoAssignPoints(addresses: string[], allAllocations: Map<number, StackAllocation[]>): Promise<StackAllocation[]> {
     // Get existing allocations for the community activation point system
     const communityAllocations: StackAllocation[] = [...(allAllocations.get(COMMUNITY_ACTIVATION_ID) || [])];
-    
+
     // Process each address in parallel
     const updatedAllocationsPromises = addresses.map(async (address): Promise<StackAllocation> => {
       // Find existing allocation for this address in Community Activation
@@ -181,17 +181,17 @@ class EligibilityService {
       // Get current point balance, defaulting to 0 if not found
       const currentPoints = existingAllocation?.points || 0;
       let finalPoints = currentPoints;
-      const NONCE_THRESHOLD = 5; 
+      const NONCE_THRESHOLD = 5;
 
       try {
         // Get user's transaction count from blockchain
         const userNonce = await BlockchainService.getUserNonce(address as `0x${string}`);
-        
+
         // If points are below threshold, assign more points
         if (currentPoints < POINT_THRESHOLD && userNonce > NONCE_THRESHOLD) {
           // Check that we're under the threshold of users per hour
           const recipientsToppedUp = latestRecipients(THRESHOLD_TIME_PERIOD).length;
-          
+
           if (recipientsToppedUp < THRESHOLD_MAX_USERS) {
             logger.info(`Address ${address} has ${currentPoints} points, auto-assigning ${POINTS_TO_ASSIGN} points`);
 
@@ -209,10 +209,10 @@ class EligibilityService {
         logger.error(`Failed to get nonce for address ${address}`, { error });
         logger.slackNotify(`Failed to get nonce for address ${address}: ${error instanceof Error ? error.message : 'Unknown error'}`);
       }
-      
+
       return { ...existingAllocation, points: finalPoints };
     });
-    
+
     // Wait for all address processing to complete
     const updatedCommunityAllocations = await Promise.all(updatedAllocationsPromises);
     return updatedCommunityAllocations;

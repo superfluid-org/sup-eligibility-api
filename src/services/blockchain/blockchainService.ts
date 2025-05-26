@@ -8,28 +8,28 @@ import { halfDayCache, oneHourCache, oneWeekCache } from '../../config/cache';
 
 const gdaPoolAbi = [
   {
-    inputs:[{name:"memberAddr",type:"address"}],
+    inputs: [{ name: "memberAddr", type: "address" }],
     name: "getUnits",
-    outputs:[{name:"", type:"uint128"}],
-    stateMutability:"view",
-    type:"function"
+    outputs: [{ name: "", type: "uint128" }],
+    stateMutability: "view",
+    type: "function"
   },
   {
-    inputs:[],
+    inputs: [],
     name: "getTotalUnits",
-    outputs:[{name:"", type:"uint128"}],
-    stateMutability:"view",
-    type:"function"
+    outputs: [{ name: "", type: "uint128" }],
+    stateMutability: "view",
+    type: "function"
   }
 ] as const;
 
 const getUserLockerAbi = [
   {
-    inputs:[{name:"user",type:"address"}],
+    inputs: [{ name: "user", type: "address" }],
     name: "getUserLocker",
-    outputs:[{name:"isCreated", type:"bool"}, {name:"lockerAddress", type:"address"}],
-    stateMutability:"view",
-    type:"function"
+    outputs: [{ name: "isCreated", type: "bool" }, { name: "lockerAddress", type: "address" }],
+    stateMutability: "view",
+    type: "function"
   }
 ] as const;
 
@@ -38,20 +38,25 @@ const getUserLockerAbi = [
  * This service handles all blockchain interactions for the Eligibility API
  */
 class BlockchainService {
-  private client;
+  private client
 
   constructor() {
-    logger.info("about to create client");
-    logger.info(`using the baseRpcUrl: ${config.baseRpcUrl}`);
-    this.client = createPublicClient({
-      chain: base,
-      transport: http(config.baseRpcUrl)
-    });
-    logger.info("client created");
-    logger.info(`client: ${this.client}`);
+    try {
+      logger.info("about to create client");
+      logger.info(`using the baseRpcUrl: ${config.baseRpcUrl}`);
+      this.client = createPublicClient({
+        chain: base,
+        transport: http(config.baseRpcUrl)
+      });
+      logger.info("client created successfully");
+      logger.info(`client: ${this.client}`);
+    } catch (error) {
+      logger.error("Failed to create blockchain client", { error });
+      throw error;
+    }
   }
 
-  getClient() : PublicClient {
+  getClient(): PublicClient {
     // @ts-ignore
     return createPublicClient({
       chain: base,
@@ -64,17 +69,17 @@ class BlockchainService {
    * @returns Promise with transaction count
    */
   async getUserNonce(address: `0x${string}`): Promise<number> {
-    const transactionCount = await this.client.getTransactionCount({  
+    const transactionCount = await this.client.getTransactionCount({
       address,
     });
     return Number(transactionCount);
   }
-  
+
 
   // get total units from memoized cache
   // keep cache in memory for 1 hour
   async getTotalUnitsMemoized(gdaPoolAddress: string): Promise<bigint> {
-    const cachedValue = pMemoize(this.getTotalUnits, {
+    const cachedValue = pMemoize(this.getTotalUnits.bind(this), {
       cache: oneHourCache,
       cacheKey: () => `totalUnits:${gdaPoolAddress}`
     });
@@ -103,7 +108,7 @@ class BlockchainService {
   async checkClaimStatus(lockerAddress: string, gdaPoolAddress: string): Promise<bigint> {
     try {
       logger.info(`Checking claim status for address ${lockerAddress} on GDA pool ${gdaPoolAddress}`);
-      
+
       const memberUnits = await this.client.readContract({
         address: gdaPoolAddress as `0x${string}`,
         abi: gdaPoolAbi,
@@ -135,7 +140,7 @@ class BlockchainService {
    * @returns Promise with locker address
    */
   async getLockerAddressMemoized(address: string | `0x${string}`): Promise<string> {
-    const cachedValue = pMemoize(this.getLockerAddress, {
+    const cachedValue = pMemoize(this.getLockerAddress.bind(this), {
       cache: halfDayCache,
       cacheKey: () => `lockerAddress:${address}`
     });
@@ -161,8 +166,7 @@ class BlockchainService {
     logger.info(`using the abi      : ${getUserLockerAbi}`);
     logger.info(`using the function : ${'getUserLocker'}`);
     logger.info(`using the args     : ${address.toLowerCase()}`);
-    logger.info(`using the client   : ${this.getClient()}`);
-    
+
     try {
       const [exists, lockerAddress] = await this.getClient().readContract({
         address: config.lockerFactoryAddress as `0x${string}`,
@@ -188,7 +192,7 @@ class BlockchainService {
    */
   async checkAllClaimStatuses(lockerAddresses: Map<string, string>): Promise<Map<string, Map<number, bigint>>> {
     const allClaimStatuses = new Map<string, Map<number, bigint>>();
-    
+
     // Initialize the map for each address
     lockerAddresses.forEach((lockerAddress, address) => {
       allClaimStatuses.set(address, new Map<number, bigint>());
@@ -196,7 +200,7 @@ class BlockchainService {
 
     // Process each address and point system combination
     const promises = [];
-    
+
     for (const [address, lockerAddress] of lockerAddresses.entries()) {
       for (const { id, gdaPoolAddress } of config.pointSystems) {
         if (!lockerAddress || lockerAddress === "0x0000000000000000000000000000000000000000") {
@@ -208,7 +212,7 @@ class BlockchainService {
           (async () => {
             try {
               const memberUnits = await this.checkClaimStatus(lockerAddress, gdaPoolAddress);
-              
+
               const statusMap = allClaimStatuses.get(address);
               if (statusMap) {
                 statusMap.set(id, memberUnits);
@@ -225,7 +229,7 @@ class BlockchainService {
         );
       }
     }
-    
+
     // Wait for all promises to resolve
     await Promise.all(promises);
 

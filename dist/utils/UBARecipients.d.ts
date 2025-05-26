@@ -1,39 +1,50 @@
 export interface UniversalPointRecipient {
     address: string;
     topUpDate: string;
-    lockerAddress?: string;
-    lockerCheckedDate?: string;
     claimed?: boolean;
     lastChecked?: string;
 }
 /**
- * Read all recipients from storage file
+ * Get stored recipients from the data file
+ * @returns Array of recipients
  */
 export declare const getStoredRecipients: () => UniversalPointRecipient[];
+/**
+ * Get recipients data, optionally with cache control
+ * @param cache Whether to use cached data (default: true)
+ * @returns Promise with recipients data
+ */
 export declare const getRecipients: (cache?: number) => Promise<UniversalPointRecipient[]>;
 /**
- * Add a new recipient to storage
+ * Add a new recipient to the data file
+ * @param recipient Recipient data to add
+ * @returns Boolean indicating success
  */
 export declare const addRecipient: (recipient: Partial<UniversalPointRecipient>) => boolean;
 /**
- * Update an existing recipient in storage
+ * Update an existing recipient
+ * @param address Address of the recipient to update
+ * @param updates Updates to apply
+ * @returns Boolean indicating success
  */
 export declare const updateRecipient: (address: string, updates: Partial<UniversalPointRecipient>) => boolean;
 /**
- * Get a single recipient by address
+ * Get a recipient by address
+ * @param address Ethereum address
+ * @returns Recipient data or null if not found
  */
 export declare const getRecipient: (address: string) => UniversalPointRecipient | null;
 /**
- * Check all recipients for eligibility and update their statuses
+ * Get high-level statistics about recipients
+ * @returns Promise with statistics
  */
-export declare const checkRecipients: (cacheInvalidation?: number) => Promise<void>;
 export declare const getHighLevelStats: () => Promise<{
     totalRecipients: number;
-    totalRecipientsWithLocker: number;
     totalRecipientsWithClaim: number;
 }>;
 /**
- * Check how many recipients have been topped up in a given time period
- * @param timePeriod - The time period in seconds
+ * Get recipients that were topped up within the specified time period
+ * @param timePeriod Time period in seconds
+ * @returns Array of recipients
  */
 export declare const latestRecipients: (timePeriod: number) => UniversalPointRecipient[];

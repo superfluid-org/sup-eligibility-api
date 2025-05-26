@@ -17,8 +17,6 @@ if (!fs.existsSync(dataDir)) {
 export interface UniversalPointRecipient {
   address: string;
   topUpDate: string;
-  lockerAddress?: string;
-  lockerCheckedDate?: string;
   claimed?: boolean;
   lastChecked?: string;
 }
@@ -159,57 +157,17 @@ export const getRecipient = (address: string): UniversalPointRecipient | null =>
 };
 
 /**
- * Check all recipients for eligibility and update their statuses
- */
-export const checkRecipients = async (cacheInvalidation?:number): Promise<void> => {
-  const recipients = getStoredRecipients();
-  const cacheInvalidationDuration = cacheInvalidation || 1000 * 60 * 20;
-  
-  // Filter recipients that need to be checked (no locker or stale data)
-  const recipientsToCheck = recipients.filter(r => 
-    !r.lockerAddress && 
-    (!r.lastChecked || new Date(r.lastChecked) < new Date(Date.now() - cacheInvalidationDuration))
-  );
-  
-  if (recipientsToCheck.length === 0) {
-    return;
-  }
-  
-  const recipientAddressList = recipientsToCheck.map(r => r.address);
-  
-  try {
-    const lockerAddresses = await blockchainService.getLockers(recipientAddressList);
-    
-    for (const recipient of recipientsToCheck) {
-      const lockerAddress = lockerAddresses.get(recipient.address.toLowerCase());
-      if (lockerAddress) {
-        updateRecipient(recipient.address, { 
-          lockerAddress: lockerAddress.lockerAddress,
-          lockerCheckedDate: lockerAddress.blockTimestamp
-        });
-      }
-      recipient.lastChecked = new Date().toISOString();
-      updateRecipient(recipient.address, { lastChecked: recipient.lastChecked });
-    }
-  } catch (error) {
-    logger.error('Failed to check recipients', { error });
-  }
-}
-
-/**
  * Get high-level statistics about recipients
  * @returns Promise with statistics
  */
 export const getHighLevelStats = async (): Promise<{
   totalRecipients: number;
-  totalRecipientsWithLocker: number;
   totalRecipientsWithClaim: number;
 }> => {
   const recipients = await getRecipients();
   
   return {
     totalRecipients: recipients.length,
-    totalRecipientsWithLocker: recipients.filter(r => r.lockerAddress).length,
     totalRecipientsWithClaim: recipients.filter(r => r.claimed).length,
   };
 };

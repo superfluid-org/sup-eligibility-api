@@ -55,7 +55,7 @@ class EligibilityController {
         });
         return;
       }
-      
+                                                                                                                                                                                                                                                                                                                                                                 
       // Check eligibility
       const results = await eligibilityService.checkEligibility(addresses);
 

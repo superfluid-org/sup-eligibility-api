@@ -161,3 +161,949 @@
 {"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-21T17:18:57.362Z"}
 {"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:15:13.852Z"}
 {"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:15:13.856Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:35:34.956Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:35:34.962Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:36:18.280Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:36:18.282Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:36:45.082Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:36:45.084Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:37:03.066Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:37:03.068Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:37:11.401Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:37:11.403Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:37:32.562Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:37:32.564Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:38:43.138Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:38:43.140Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:39:05.869Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:39:05.871Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:39:09.615Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:39:09.617Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:39:15.607Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:39:15.609Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:39:26.999Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:39:27.001Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:39:32.094Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:39:32.096Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:40:48.183Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:40:48.217Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:43:22.721Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:43:22.723Z"}
+{"ip":"::1","level":"info","message":"GET /admin/api-keys","query":{},"timestamp":"2025-05-22T11:44:51.444Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","level":"warn","message":"API request missing API key","path":"/admin/api-keys","timestamp":"2025-05-22T11:44:51.445Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Security Event: Missing API key","timestamp":"2025-05-22T11:44:51.445Z"}
+{"ip":"::1","level":"warn","message":"Security Event: Missing API key","path":"/admin/api-keys","timestamp":"2025-05-22T11:44:51.445Z","userAgent":"curl/8.4.0"}
+{"level":"warn","message":"GET /admin/api-keys 401 6ms","timestamp":"2025-05-22T11:44:51.450Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:46:02.337Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:46:02.339Z"}
+{"ip":"::1","level":"info","message":"GET /admin/keys","query":{},"timestamp":"2025-05-22T11:46:31.744Z","userAgent":"curl/8.4.0"}
+{"level":"warn","message":"GET /admin/keys 401 3ms","timestamp":"2025-05-22T11:46:31.747Z"}
+{"ip":"::1","level":"info","message":"GET /admin/keys","query":{},"timestamp":"2025-05-22T11:47:52.724Z","userAgent":"curl/8.4.0"}
+{"level":"warn","message":"GET /admin/keys 401 2ms","timestamp":"2025-05-22T11:47:52.726Z"}
+{"ip":"::1","level":"info","message":"GET /admin/keys","query":{},"timestamp":"2025-05-22T11:48:59.524Z","userAgent":"curl/8.4.0"}
+{"level":"warn","message":"GET /admin/keys 401 2ms","timestamp":"2025-05-22T11:48:59.526Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:49:15.716Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:49:15.718Z"}
+{"ip":"::1","level":"info","message":"GET /admin/keys","query":{},"timestamp":"2025-05-22T11:49:18.695Z","userAgent":"curl/8.4.0"}
+{"adminIp":"::1","keyCount":4,"level":"info","message":"Admin listed API keys","timestamp":"2025-05-22T11:49:18.697Z"}
+{"level":"info","message":"GET /admin/keys 200 4ms","timestamp":"2025-05-22T11:49:18.698Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:50:15.039Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:50:15.042Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:50:19.690Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:50:19.692Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:50:36.668Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:50:36.670Z"}
+{"ip":"::1","level":"info","message":"GET /admin/keys","query":{},"timestamp":"2025-05-22T11:50:39.320Z","userAgent":"curl/8.4.0"}
+{"adminIp":"::1","keyCount":4,"level":"info","message":"Admin listed API keys","timestamp":"2025-05-22T11:50:39.322Z"}
+{"level":"info","message":"GET /admin/keys 200 3ms","timestamp":"2025-05-22T11:50:39.323Z"}
+{"ip":"::1","level":"info","message":"GET /admin/usage","query":{},"timestamp":"2025-05-22T11:51:40.148Z","userAgent":"curl/8.4.0"}
+{"level":"info","message":"GET /admin/usage 200 2ms","timestamp":"2025-05-22T11:51:40.150Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:52:59.847Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:52:59.850Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:54:23.069Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:54:23.072Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:54:26.261Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:54:26.264Z"}
+{"ip":"::1","level":"info","message":"GET /admin/usage","query":{},"timestamp":"2025-05-22T11:54:30.336Z","userAgent":"curl/8.4.0"}
+{"level":"info","message":"GET /admin/usage 200 5ms","timestamp":"2025-05-22T11:54:30.341Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:55:26.627Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:55:26.630Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:55:36.674Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:55:36.676Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:56:09.030Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:56:09.032Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:56:14.649Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:56:14.651Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:56:18.804Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:56:18.806Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:56:30.337Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:56:30.338Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:56:39.421Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:56:39.438Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:58:10.286Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:58:10.288Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T11:58:19.039Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T11:58:19.041Z"}
+{"ip":"::1","level":"info","message":"GET /health","query":{},"timestamp":"2025-05-22T12:04:25.299Z","userAgent":"curl/8.4.0"}
+{"level":"info","message":"GET /health 200 5ms","timestamp":"2025-05-22T12:04:25.303Z"}
+{"ip":"::1","level":"info","message":"GET /admin/keys","query":{},"timestamp":"2025-05-22T12:04:31.624Z","userAgent":"curl/8.4.0"}
+{"adminIp":"::1","keyCount":4,"level":"info","message":"Admin listed API keys","timestamp":"2025-05-22T12:04:31.625Z"}
+{"level":"info","message":"GET /admin/keys 200 2ms","timestamp":"2025-05-22T12:04:31.626Z"}
+{"ip":"::1","level":"info","message":"POST /admin/keys/generate","query":{},"timestamp":"2025-05-22T12:04:58.435Z","userAgent":"curl/8.4.0"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] New API key generated for client: my-new-eligibility-hack","timestamp":"2025-05-22T12:04:58.436Z"}
+{"level":"info","message":"POST /admin/keys/generate 200 2ms","timestamp":"2025-05-22T12:04:58.437Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0x123456789012345678901234567890123456789a"},"timestamp":"2025-05-22T12:05:32.356Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-22T12:05:32.357Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-22T12:05:32.358Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-22T12:05:32.358Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-22T12:05:32.406Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-22T12:05:32.408Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-22T12:05:32.408Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-22T12:05:32.409Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-22T12:05:32.410Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-22T12:05:32.412Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-22T12:05:32.412Z"}
+{"error":{"abi":[{"inputs":[{"name":"memberAddr","type":"address"}],"name":"getUserLocker","outputs":[{"name":"","type":"bool"},{"name":"","type":"address"}],"stateMutability":"view","type":"function"}],"args":["0x123456789012345678901234567890123456789a"],"cause":{"message":"The contract function \"getUserLocker\" returned no data (\"0x\").\n\nThis could be due to any of the following:\n  - The contract does not have the function \"getUserLocker\",\n  - The parameters passed to the contract function may be invalid, or\n  - The address is not a contract.\n\nVersion: viem@1.21.3","metaMessages":["This could be due to any of the following:","  - The contract does not have the function \"getUserLocker\",","  - The parameters passed to the contract function may be invalid, or","  - The address is not a contract."],"name":"ContractFunctionZeroDataError","shortMessage":"The contract function \"getUserLocker\" returned no data (\"0x\").","version":"viem@1.21.3"},"contractAddress":"0x1234567890abcdef1234567890abcdef12345678","docsPath":"/docs/contract/readContract","functionName":"getUserLocker","message":"The contract function \"getUserLocker\" returned no data (\"0x\").\n\nThis could be due to any of the following:\n  - The contract does not have the function \"getUserLocker\",\n  - The parameters passed to the contract function may be invalid, or\n  - The address is not a contract.\n \nContract Call:\n  address:   0x1234567890abcdef1234567890abcdef12345678\n  function:  getUserLocker(address memberAddr)\n  args:                   (0x123456789012345678901234567890123456789a)\n\nDocs: https://viem.sh/docs/contract/readContract.html\nVersion: viem@1.21.3","metaMessages":["This could be due to any of the following:","  - The contract does not have the function \"getUserLocker\",","  - The parameters passed to the contract function may be invalid, or","  - The address is not a contract."," ","Contract Call:","  address:   0x1234567890abcdef1234567890abcdef12345678\n  function:  getUserLocker(address memberAddr)\n  args:                   (0x123456789012345678901234567890123456789a)"],"name":"ContractFunctionExecutionError","shortMessage":"The contract function \"getUserLocker\" returned no data (\"0x\").","version":"viem@1.21.3"},"level":"error","message":"Failed to get locker addresses","timestamp":"2025-05-22T12:05:44.999Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Failed to get locker addresses for addresses: 0x123456789012345678901234567890123456789a: The contract function \"getUserLocker\" returned no data (\"0x\").\n\nThis could be due to any of the following:\n  - The contract does not have the function \"getUserLocker\",\n  - The parameters passed to the contract function may be invalid, or\n  - The address is not a contract.\n \nContract Call:\n  address:   0x1234567890abcdef1234567890abcdef12345678\n  function:  getUserLocker(address memberAddr)\n  args:                   (0x123456789012345678901234567890123456789a)\n\nDocs: https://viem.sh/docs/contract/readContract.html\nVersion: viem@1.21.3","timestamp":"2025-05-22T12:05:45.000Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-22T12:05:45.001Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-22T12:05:45.001Z"}
+{"level":"warn","message":"GET /eligibility 500 12647ms","timestamp":"2025-05-22T12:05:45.003Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T12:06:32.413Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T12:06:32.415Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T12:06:45.209Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T12:06:45.211Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T12:07:07.739Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T12:07:07.741Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T12:07:08.663Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T12:07:08.665Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T12:07:11.042Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T12:07:11.044Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T12:07:55.738Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T12:07:55.741Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0x123456789012345678901234567890123456789a"},"timestamp":"2025-05-22T12:08:02.448Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-22T12:08:02.449Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-22T12:08:02.450Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-22T12:08:02.450Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-22T12:08:02.486Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-22T12:08:02.487Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-22T12:08:02.488Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-22T12:08:02.489Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-22T12:08:02.490Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-22T12:08:02.490Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-22T12:08:02.492Z"}
+{"error":{},"level":"error","message":"Failed to get claim statuses","timestamp":"2025-05-22T12:08:09.012Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Failed to get claim statuses for addresses: 0x123456789012345678901234567890123456789a: lockerAddresses is not defined","timestamp":"2025-05-22T12:08:09.013Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-22T12:08:09.015Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-22T12:08:09.015Z"}
+{"level":"warn","message":"GET /eligibility 500 6574ms","timestamp":"2025-05-22T12:08:09.021Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T12:12:49.402Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T12:12:49.405Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T12:13:02.394Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T12:13:02.396Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0x123456789012345678901234567890123456789a"},"timestamp":"2025-05-22T12:13:07.263Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-22T12:13:07.264Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-22T12:13:07.265Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-22T12:13:07.266Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-22T12:13:07.298Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-22T12:13:07.299Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-22T12:13:07.300Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-22T12:13:07.301Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-22T12:13:07.302Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-22T12:13:07.303Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-22T12:13:07.303Z"}
+{"error":{},"level":"error","message":"Failed to get claim statuses","timestamp":"2025-05-22T12:13:12.536Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Failed to get claim statuses for addresses: 0x123456789012345678901234567890123456789a: lockerAddresses is not defined","timestamp":"2025-05-22T12:13:12.537Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-22T12:13:12.538Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-22T12:13:12.540Z"}
+{"level":"warn","message":"GET /eligibility 500 5287ms","timestamp":"2025-05-22T12:13:12.550Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T12:15:01.058Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T12:15:01.060Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T12:15:30.539Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T12:15:30.541Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T12:20:56.844Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T12:20:56.846Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0x123456789012345678901234567890123456789a"},"timestamp":"2025-05-22T12:21:09.270Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-22T12:21:09.271Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-22T12:21:09.272Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-22T12:21:09.273Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-22T12:21:09.304Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-22T12:21:09.306Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-22T12:21:09.306Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-22T12:21:09.307Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-22T12:21:09.308Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-22T12:21:09.309Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-22T12:21:09.310Z"}
+{"error":{},"level":"error","message":"Failed to get claim statuses","timestamp":"2025-05-22T12:21:17.812Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Failed to get claim statuses for addresses: 0x123456789012345678901234567890123456789a: lockerAddresses is not defined","timestamp":"2025-05-22T12:21:17.813Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-22T12:21:17.813Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-22T12:21:17.814Z"}
+{"level":"warn","message":"GET /eligibility 500 8548ms","timestamp":"2025-05-22T12:21:17.818Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0x123456789012345678901234567890123456789a"},"timestamp":"2025-05-22T12:21:42.648Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-22T12:21:42.648Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-22T12:21:42.649Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-22T12:21:42.651Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-22T12:21:42.653Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-22T12:21:42.654Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-22T12:21:42.655Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-22T12:21:42.656Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-22T12:21:42.657Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-22T12:21:42.658Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-22T12:21:42.659Z"}
+{"error":{},"level":"error","message":"Failed to get claim statuses","timestamp":"2025-05-22T12:21:44.999Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Failed to get claim statuses for addresses: 0x123456789012345678901234567890123456789a: lockerAddresses is not defined","timestamp":"2025-05-22T12:21:44.999Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-22T12:21:44.999Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-22T12:21:45.000Z"}
+{"level":"warn","message":"GET /eligibility 500 2354ms","timestamp":"2025-05-22T12:21:45.001Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T12:22:24.544Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T12:22:24.546Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T12:22:29.178Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T12:22:29.180Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T12:22:34.649Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T12:22:34.651Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0x123456789012345678901234567890123456789a"},"timestamp":"2025-05-22T12:22:41.853Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-22T12:22:41.854Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-22T12:22:41.856Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-22T12:22:41.856Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-22T12:22:41.890Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-22T12:22:41.892Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-22T12:22:41.893Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-22T12:22:41.894Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-22T12:22:41.895Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-22T12:22:41.895Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-22T12:22:41.896Z"}
+{"error":{"abi":[{"inputs":[{"name":"memberAddr","type":"address"}],"name":"getUserLocker","outputs":[{"name":"","type":"bool"},{"name":"","type":"address"}],"stateMutability":"view","type":"function"}],"args":["0x123456789012345678901234567890123456789a"],"cause":{"message":"The contract function \"getUserLocker\" returned no data (\"0x\").\n\nThis could be due to any of the following:\n  - The contract does not have the function \"getUserLocker\",\n  - The parameters passed to the contract function may be invalid, or\n  - The address is not a contract.\n\nVersion: viem@1.21.3","metaMessages":["This could be due to any of the following:","  - The contract does not have the function \"getUserLocker\",","  - The parameters passed to the contract function may be invalid, or","  - The address is not a contract."],"name":"ContractFunctionZeroDataError","shortMessage":"The contract function \"getUserLocker\" returned no data (\"0x\").","version":"viem@1.21.3"},"contractAddress":"0x1234567890abcdef1234567890abcdef12345678","docsPath":"/docs/contract/readContract","functionName":"getUserLocker","message":"The contract function \"getUserLocker\" returned no data (\"0x\").\n\nThis could be due to any of the following:\n  - The contract does not have the function \"getUserLocker\",\n  - The parameters passed to the contract function may be invalid, or\n  - The address is not a contract.\n \nContract Call:\n  address:   0x1234567890abcdef1234567890abcdef12345678\n  function:  getUserLocker(address memberAddr)\n  args:                   (0x123456789012345678901234567890123456789a)\n\nDocs: https://viem.sh/docs/contract/readContract.html\nVersion: viem@1.21.3","metaMessages":["This could be due to any of the following:","  - The contract does not have the function \"getUserLocker\",","  - The parameters passed to the contract function may be invalid, or","  - The address is not a contract."," ","Contract Call:","  address:   0x1234567890abcdef1234567890abcdef12345678\n  function:  getUserLocker(address memberAddr)\n  args:                   (0x123456789012345678901234567890123456789a)"],"name":"ContractFunctionExecutionError","shortMessage":"The contract function \"getUserLocker\" returned no data (\"0x\").","version":"viem@1.21.3"},"level":"error","message":"Failed to get locker address for 0x123456789012345678901234567890123456789a","timestamp":"2025-05-22T12:22:49.642Z"}
+{"level":"info","message":"lockerAddresses in _checkEligibility: ","timestamp":"2025-05-22T12:22:49.643Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-22T12:22:49.643Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-22T12:22:49.643Z"}
+{"level":"warn","message":"GET /eligibility 500 7794ms","timestamp":"2025-05-22T12:22:49.646Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T12:26:33.596Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T12:26:33.598Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0x123456789012345678901234567890123456789a"},"timestamp":"2025-05-22T12:26:35.343Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-22T12:26:35.343Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-22T12:26:35.344Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-22T12:26:35.344Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-22T12:26:35.374Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-22T12:26:35.375Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-22T12:26:35.376Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-22T12:26:35.377Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-22T12:26:35.378Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-22T12:26:35.378Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-22T12:26:35.379Z"}
+{"level":"info","message":"lockerAddresses in _checkEligibility: ","timestamp":"2025-05-22T12:26:40.014Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-22T12:26:40.016Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-22T12:26:40.016Z"}
+{"level":"warn","message":"GET /eligibility 500 4680ms","timestamp":"2025-05-22T12:26:40.023Z"}
+{"error":{"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"data":"{\"attachments\":[{\"color\":\"#FF0000\",\"text\":\":x: [DEV] Error in eligibility check endpoint: Failed to check eligibility: Cannot read properties of undefined (reading 'client')\",\"footer\":\"Eligibility API 2025-05-22T12:26:40.020Z\"}]}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Accept-Encoding":"gzip, compress, deflate, br","Content-Length":"229","Content-Type":"application/json","User-Agent":"axios/1.9.0"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"https://hooks.slack.com/services/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","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 429","name":"AxiosError","stack":"AxiosError: Request failed with status code 429\n    at settle (/Users/xiko/sup-eligibility-api/node_modules/.pnpm/axios@1.9.0/node_modules/axios/lib/core/settle.js:19:12)\n    at IncomingMessage.handleStreamEnd (/Users/xiko/sup-eligibility-api/node_modules/.pnpm/axios@1.9.0/node_modules/axios/lib/adapters/http.js:599:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1359:12)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)\n    at Axios.request (/Users/xiko/sup-eligibility-api/node_modules/.pnpm/axios@1.9.0/node_modules/axios/lib/core/Axios.js:45:41)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at DerivedLogger.logger.slackNotify (/Users/xiko/sup-eligibility-api/src/utils/logger.ts:66:5)","status":429},"level":"error","message":"Failed to send Slack notification","timestamp":"2025-05-22T12:26:41.521Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T16:29:37.435Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T16:29:37.438Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0x123456789012345678901234567890123456789a"},"timestamp":"2025-05-22T16:29:44.786Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-22T16:29:44.787Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-22T16:29:44.789Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-22T16:29:44.789Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-22T16:29:44.826Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-22T16:29:44.828Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-22T16:29:44.829Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-22T16:29:44.829Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-22T16:29:44.830Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-22T16:29:44.831Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-22T16:29:44.832Z"}
+{"level":"info","message":"lockerAddresses in _checkEligibility: ","timestamp":"2025-05-22T16:29:47.937Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-22T16:29:47.938Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-22T16:29:47.938Z"}
+{"level":"warn","message":"GET /eligibility 500 3159ms","timestamp":"2025-05-22T16:29:47.945Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T16:40:52.791Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T16:40:52.793Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T16:41:34.749Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T16:41:34.751Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T16:41:39.542Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T16:41:39.544Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T16:46:44.672Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T16:46:44.674Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0x123456789012345678901234567890123456789a"},"timestamp":"2025-05-22T16:49:15.519Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-22T16:49:15.520Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-22T16:49:15.522Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-22T16:49:15.522Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-22T16:49:15.569Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-22T16:49:15.571Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-22T16:49:15.572Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-22T16:49:15.572Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-22T16:49:15.573Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-22T16:49:15.574Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-22T16:49:15.575Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789a","timestamp":"2025-05-22T16:49:18.169Z"}
+{"level":"info","message":"lockerAddresses in _checkEligibility: ","timestamp":"2025-05-22T16:49:18.169Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789a","timestamp":"2025-05-22T16:49:18.170Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789a","timestamp":"2025-05-22T16:49:18.170Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789a","timestamp":"2025-05-22T16:49:18.171Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789a","timestamp":"2025-05-22T16:49:18.171Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789a","timestamp":"2025-05-22T16:49:18.171Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789a","timestamp":"2025-05-22T16:49:18.171Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789a","timestamp":"2025-05-22T16:49:18.171Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789a","timestamp":"2025-05-22T16:49:18.171Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-22T16:49:18.172Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-22T16:49:18.174Z"}
+{"level":"warn","message":"GET /eligibility 500 2666ms","timestamp":"2025-05-22T16:49:18.184Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T16:53:36.171Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T16:53:36.173Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T16:53:54.590Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T16:53:54.592Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T16:54:44.965Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T16:54:44.967Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T16:54:50.984Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T16:54:50.986Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T16:55:38.426Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T16:55:38.428Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T16:55:58.662Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T16:55:58.664Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T16:56:23.437Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T16:56:23.441Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T16:56:31.142Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T16:56:31.144Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T16:58:02.051Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T16:58:02.053Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T16:58:06.513Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T16:58:06.516Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T16:58:25.627Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T16:58:25.629Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T16:58:27.735Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T16:58:27.737Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T16:58:54.668Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T16:58:54.670Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T16:59:28.884Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T16:59:28.889Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T16:59:30.108Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T16:59:30.110Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T16:59:30.860Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T16:59:30.862Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T16:59:48.183Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T16:59:48.185Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T16:59:53.519Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T16:59:53.522Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T16:59:57.272Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T16:59:57.274Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T17:00:06.099Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T17:00:06.102Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T17:00:40.157Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T17:00:40.159Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T17:01:01.016Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T17:01:01.018Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T17:01:29.004Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T17:01:29.006Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T17:01:40.426Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T17:01:40.428Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T17:02:03.446Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T17:02:03.448Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T17:02:59.829Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T17:02:59.831Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T17:03:06.072Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T17:03:06.074Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T17:03:09.236Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T17:03:09.238Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T17:03:12.118Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T17:03:12.121Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T17:03:22.725Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T17:03:22.727Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0x123456789012345678901234567890123456789a"},"timestamp":"2025-05-22T17:03:31.373Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-22T17:03:31.374Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-22T17:03:31.376Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-22T17:03:31.376Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-22T17:03:31.410Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-22T17:03:31.412Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-22T17:03:31.413Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-22T17:03:31.414Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-22T17:03:31.414Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-22T17:03:31.415Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-22T17:03:31.417Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789a","timestamp":"2025-05-22T17:03:34.485Z"}
+{"level":"info","message":"lockerAddresses in _checkEligibility: ","timestamp":"2025-05-22T17:03:34.485Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789a","timestamp":"2025-05-22T17:03:34.485Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789a","timestamp":"2025-05-22T17:03:34.486Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789a","timestamp":"2025-05-22T17:03:34.486Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789a","timestamp":"2025-05-22T17:03:34.486Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789a","timestamp":"2025-05-22T17:03:34.486Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789a","timestamp":"2025-05-22T17:03:34.486Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789a","timestamp":"2025-05-22T17:03:34.486Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789a","timestamp":"2025-05-22T17:03:34.486Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-22T17:03:34.487Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-22T17:03:34.487Z"}
+{"level":"warn","message":"GET /eligibility 500 3119ms","timestamp":"2025-05-22T17:03:34.492Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T17:04:06.748Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T17:04:06.750Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0x123456789012345678901234567890123456789b"},"timestamp":"2025-05-22T17:04:29.361Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-22T17:04:29.362Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-22T17:04:29.364Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-22T17:04:29.364Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-22T17:04:29.397Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-22T17:04:29.398Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-22T17:04:29.399Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-22T17:04:29.400Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-22T17:04:29.401Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-22T17:04:29.402Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-22T17:04:29.402Z"}
+{"error":{},"level":"error","message":"Failed to get locker address for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-22T17:04:31.356Z"}
+{"level":"info","message":"lockerAddresses in _checkEligibility: ","timestamp":"2025-05-22T17:04:31.357Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-22T17:04:31.358Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-22T17:04:31.358Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-22T17:04:31.358Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-22T17:04:31.358Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-22T17:04:31.358Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-22T17:04:31.358Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-22T17:04:31.358Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-22T17:04:31.358Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-22T17:04:31.359Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-22T17:04:31.359Z"}
+{"level":"warn","message":"GET /eligibility 500 2002ms","timestamp":"2025-05-22T17:04:31.363Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T17:56:28.531Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T17:56:28.534Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-22T17:56:32.021Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-22T17:56:32.023Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0x123456789012345678901234567890123456789b"},"timestamp":"2025-05-23T12:01:46.468Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-23T12:01:46.482Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-23T12:01:46.490Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-23T12:01:46.491Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-23T12:01:46.557Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-23T12:01:46.559Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-23T12:01:46.560Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-23T12:01:46.564Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-23T12:01:46.565Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-23T12:01:46.566Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-23T12:01:46.567Z"}
+{"error":{},"level":"error","message":"Failed to get locker address for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-23T12:01:48.738Z"}
+{"level":"info","message":"lockerAddresses in _checkEligibility: ","timestamp":"2025-05-23T12:01:48.739Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-23T12:01:48.739Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-23T12:01:48.739Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-23T12:01:48.739Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-23T12:01:48.739Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-23T12:01:48.739Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-23T12:01:48.739Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-23T12:01:48.739Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-23T12:01:48.739Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-23T12:01:48.740Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-23T12:01:48.740Z"}
+{"level":"warn","message":"GET /eligibility 500 2283ms","timestamp":"2025-05-23T12:01:48.749Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-23T12:03:43.177Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-23T12:03:43.180Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-23T12:06:10.228Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-23T12:06:10.231Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0x123456789012345678901234567890123456789b"},"timestamp":"2025-05-23T12:06:13.779Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-23T12:06:13.780Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-23T12:06:13.781Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-23T12:06:13.782Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-23T12:06:13.812Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-23T12:06:13.814Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-23T12:06:13.814Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-23T12:06:13.815Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-23T12:06:13.816Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-23T12:06:13.817Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-23T12:06:13.817Z"}
+{"level":"info","message":"allAllocations in _checkEligibility: ","timestamp":"2025-05-23T12:06:15.751Z"}
+{"level":"info","message":"Getting locker address for 0x123456789012345678901234567890123456789b from the blockchain","timestamp":"2025-05-23T12:06:16.560Z"}
+{"error":{},"level":"error","message":"Failed to get locker address for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-23T12:06:16.560Z"}
+{"level":"info","message":"lockerAddresses in _checkEligibility: ","timestamp":"2025-05-23T12:06:16.560Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-23T12:06:16.560Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-23T12:06:16.560Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-23T12:06:16.560Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-23T12:06:16.560Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-23T12:06:16.560Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-23T12:06:16.560Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-23T12:06:16.560Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-23T12:06:16.560Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-23T12:06:16.561Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-23T12:06:16.561Z"}
+{"level":"warn","message":"GET /eligibility 500 2784ms","timestamp":"2025-05-23T12:06:16.563Z"}
+{"error":{"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"data":"{\"attachments\":[{\"color\":\"#FF0000\",\"text\":\":x: [DEV] Error in eligibility check endpoint: Failed to check eligibility: Cannot read properties of undefined (reading 'client')\",\"footer\":\"Eligibility API 2025-05-23T12:06:16.562Z\"}]}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Accept-Encoding":"gzip, compress, deflate, br","Content-Length":"229","Content-Type":"application/json","User-Agent":"axios/1.9.0"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"https://hooks.slack.com/services/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","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 429","name":"AxiosError","stack":"AxiosError: Request failed with status code 429\n    at settle (/Users/xiko/sup-eligibility-api/node_modules/.pnpm/axios@1.9.0/node_modules/axios/lib/core/settle.js:19:12)\n    at IncomingMessage.handleStreamEnd (/Users/xiko/sup-eligibility-api/node_modules/.pnpm/axios@1.9.0/node_modules/axios/lib/adapters/http.js:599:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1359:12)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)\n    at Axios.request (/Users/xiko/sup-eligibility-api/node_modules/.pnpm/axios@1.9.0/node_modules/axios/lib/core/Axios.js:45:41)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at DerivedLogger.logger.slackNotify (/Users/xiko/sup-eligibility-api/src/utils/logger.ts:66:5)","status":429},"level":"error","message":"Failed to send Slack notification","timestamp":"2025-05-23T12:06:16.889Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0x123456789012345678901234567890123456789b"},"timestamp":"2025-05-24T08:09:01.215Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-24T08:09:01.221Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-24T08:09:01.224Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-24T08:09:01.225Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-24T08:09:01.233Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-24T08:09:01.236Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-24T08:09:01.237Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-24T08:09:01.239Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-24T08:09:01.240Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-24T08:09:01.241Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-24T08:09:01.242Z"}
+{"level":"info","message":"allAllocations in _checkEligibility: ","timestamp":"2025-05-24T08:09:03.559Z"}
+{"level":"info","message":"Getting locker address for 0x123456789012345678901234567890123456789b from the blockchain","timestamp":"2025-05-24T08:09:05.961Z"}
+{"error":{},"level":"error","message":"Failed to get locker address for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-24T08:09:05.963Z"}
+{"level":"info","message":"lockerAddresses in _checkEligibility: ","timestamp":"2025-05-24T08:09:05.964Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-24T08:09:05.964Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-24T08:09:05.964Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-24T08:09:05.964Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-24T08:09:05.964Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-24T08:09:05.964Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-24T08:09:05.964Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-24T08:09:05.964Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-24T08:09:05.965Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-24T08:09:05.965Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-24T08:09:05.965Z"}
+{"level":"warn","message":"GET /eligibility 500 4759ms","timestamp":"2025-05-24T08:09:05.971Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0x123456789012345678901234567890123456789b"},"timestamp":"2025-05-24T08:14:48.132Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-24T08:14:48.134Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-24T08:14:48.135Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-24T08:14:48.135Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-24T08:14:48.141Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-24T08:14:48.143Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-24T08:14:48.144Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-24T08:14:48.145Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-24T08:14:48.148Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-24T08:14:48.149Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-24T08:14:48.149Z"}
+{"level":"info","message":"allAllocations in _checkEligibility: ","timestamp":"2025-05-24T08:14:50.394Z"}
+{"level":"info","message":"lockerAddresses in _checkEligibility: ","timestamp":"2025-05-24T08:14:51.818Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-24T08:14:51.819Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-24T08:14:51.819Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-24T08:14:51.819Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-24T08:14:51.819Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-24T08:14:51.819Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-24T08:14:51.819Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-24T08:14:51.819Z"}
+{"level":"info","message":"No locker address found for 0x123456789012345678901234567890123456789b","timestamp":"2025-05-24T08:14:51.819Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-24T08:14:51.820Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-24T08:14:51.820Z"}
+{"level":"warn","message":"GET /eligibility 500 3693ms","timestamp":"2025-05-24T08:14:51.824Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T08:15:27.398Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T08:15:27.400Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0xEe5c044517c364031Ef59024307bd15fFc160463"},"timestamp":"2025-05-24T08:33:27.438Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-24T08:33:27.452Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-24T08:33:27.457Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-24T08:33:27.458Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-24T08:33:27.512Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-24T08:33:27.513Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-24T08:33:27.514Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-24T08:33:27.515Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-24T08:33:27.516Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-24T08:33:27.517Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-24T08:33:27.520Z"}
+{"level":"info","message":"allAllocations in _checkEligibility: ","timestamp":"2025-05-24T08:33:32.292Z"}
+{"level":"info","message":"Getting locker address for 0xEe5c044517c364031Ef59024307bd15fFc160463 from the blockchain","timestamp":"2025-05-24T08:33:34.489Z"}
+{"error":{},"level":"error","message":"Failed to get locker address for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:33:34.489Z"}
+{"level":"info","message":"lockerAddresses in _checkEligibility: ","timestamp":"2025-05-24T08:33:34.490Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:33:34.490Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:33:34.490Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:33:34.490Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:33:34.490Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:33:34.490Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:33:34.490Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:33:34.490Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:33:34.490Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-24T08:33:34.490Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-24T08:33:34.491Z"}
+{"level":"warn","message":"GET /eligibility 500 7067ms","timestamp":"2025-05-24T08:33:34.500Z"}
+{"error":{"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"data":"{\"attachments\":[{\"color\":\"#FF0000\",\"text\":\":x: [DEV] Error in eligibility check endpoint: Failed to check eligibility: Cannot read properties of undefined (reading 'client')\",\"footer\":\"Eligibility API 2025-05-24T08:33:34.498Z\"}]}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Accept-Encoding":"gzip, compress, deflate, br","Content-Length":"229","Content-Type":"application/json","User-Agent":"axios/1.9.0"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"https://hooks.slack.com/services/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","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 429","name":"AxiosError","stack":"AxiosError: Request failed with status code 429\n    at settle (/Users/xiko/sup-eligibility-api/node_modules/.pnpm/axios@1.9.0/node_modules/axios/lib/core/settle.js:19:12)\n    at IncomingMessage.handleStreamEnd (/Users/xiko/sup-eligibility-api/node_modules/.pnpm/axios@1.9.0/node_modules/axios/lib/adapters/http.js:599:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1359:12)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)\n    at Axios.request (/Users/xiko/sup-eligibility-api/node_modules/.pnpm/axios@1.9.0/node_modules/axios/lib/core/Axios.js:45:41)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at DerivedLogger.logger.slackNotify (/Users/xiko/sup-eligibility-api/src/utils/logger.ts:66:5)","status":429},"level":"error","message":"Failed to send Slack notification","timestamp":"2025-05-24T08:33:36.291Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T08:34:49.370Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T08:34:49.373Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0xEe5c044517c364031Ef59024307bd15fFc160463"},"timestamp":"2025-05-24T08:34:54.489Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-24T08:34:54.490Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-24T08:34:54.492Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-24T08:34:54.492Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-24T08:34:54.522Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-24T08:34:54.523Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-24T08:34:54.524Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-24T08:34:54.525Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-24T08:34:54.526Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-24T08:34:54.526Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-24T08:34:54.527Z"}
+{"level":"info","message":"allAllocations in _checkEligibility: ","timestamp":"2025-05-24T08:34:57.349Z"}
+{"level":"info","message":"Getting locker address for 0xEe5c044517c364031Ef59024307bd15fFc160463 from the blockchain","timestamp":"2025-05-24T08:34:58.817Z"}
+{"error":{},"level":"error","message":"Failed to get locker address for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:34:58.817Z"}
+{"level":"info","message":"lockerAddresses in _checkEligibility: ","timestamp":"2025-05-24T08:34:58.818Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:34:58.818Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:34:58.818Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:34:58.818Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:34:58.818Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:34:58.818Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:34:58.818Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:34:58.818Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:34:58.818Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-24T08:34:58.818Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-24T08:34:58.818Z"}
+{"level":"warn","message":"GET /eligibility 500 4332ms","timestamp":"2025-05-24T08:34:58.821Z"}
+{"error":{"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"data":"{\"attachments\":[{\"color\":\"#FF0000\",\"text\":\":x: [DEV] Error in eligibility check endpoint: Failed to check eligibility: Cannot read properties of undefined (reading 'client')\",\"footer\":\"Eligibility API 2025-05-24T08:34:58.820Z\"}]}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Accept-Encoding":"gzip, compress, deflate, br","Content-Length":"229","Content-Type":"application/json","User-Agent":"axios/1.9.0"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"https://hooks.slack.com/services/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","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 429","name":"AxiosError","stack":"AxiosError: Request failed with status code 429\n    at settle (/Users/xiko/sup-eligibility-api/node_modules/.pnpm/axios@1.9.0/node_modules/axios/lib/core/settle.js:19:12)\n    at IncomingMessage.handleStreamEnd (/Users/xiko/sup-eligibility-api/node_modules/.pnpm/axios@1.9.0/node_modules/axios/lib/adapters/http.js:599:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1359:12)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)\n    at Axios.request (/Users/xiko/sup-eligibility-api/node_modules/.pnpm/axios@1.9.0/node_modules/axios/lib/core/Axios.js:45:41)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at DerivedLogger.logger.slackNotify (/Users/xiko/sup-eligibility-api/src/utils/logger.ts:66:5)","status":429},"level":"error","message":"Failed to send Slack notification","timestamp":"2025-05-24T08:35:00.438Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T08:37:45.552Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T08:37:45.554Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T08:37:57.289Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T08:37:57.291Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0xEe5c044517c364031Ef59024307bd15fFc160463"},"timestamp":"2025-05-24T08:38:25.154Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-24T08:38:25.155Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-24T08:38:25.157Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-24T08:38:25.157Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-24T08:38:25.190Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-24T08:38:25.191Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-24T08:38:25.192Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-24T08:38:25.193Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-24T08:38:25.194Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-24T08:38:25.195Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-24T08:38:25.195Z"}
+{"level":"info","message":"allAllocations in _checkEligibility: ","timestamp":"2025-05-24T08:38:28.260Z"}
+{"level":"info","message":"Getting locker address for 0xEe5c044517c364031Ef59024307bd15fFc160463 from the blockchain","timestamp":"2025-05-24T08:38:29.979Z"}
+{"error":{},"level":"error","message":"Failed to get locker address for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:38:29.979Z"}
+{"level":"info","message":"lockerAddresses in _checkEligibility: ","timestamp":"2025-05-24T08:38:29.979Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:38:29.979Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:38:29.980Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:38:29.980Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:38:29.980Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:38:29.980Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:38:29.980Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:38:29.980Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:38:29.980Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-24T08:38:29.980Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-24T08:38:29.980Z"}
+{"level":"warn","message":"GET /eligibility 500 4829ms","timestamp":"2025-05-24T08:38:29.983Z"}
+{"error":{"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"data":"{\"attachments\":[{\"color\":\"#FF0000\",\"text\":\":x: [DEV] Error in eligibility check endpoint: Failed to check eligibility: Cannot read properties of undefined (reading 'client')\",\"footer\":\"Eligibility API 2025-05-24T08:38:29.981Z\"}]}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Accept-Encoding":"gzip, compress, deflate, br","Content-Length":"229","Content-Type":"application/json","User-Agent":"axios/1.9.0"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"https://hooks.slack.com/services/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","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 429","name":"AxiosError","stack":"AxiosError: Request failed with status code 429\n    at settle (/Users/xiko/sup-eligibility-api/node_modules/.pnpm/axios@1.9.0/node_modules/axios/lib/core/settle.js:19:12)\n    at IncomingMessage.handleStreamEnd (/Users/xiko/sup-eligibility-api/node_modules/.pnpm/axios@1.9.0/node_modules/axios/lib/adapters/http.js:599:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1359:12)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)\n    at Axios.request (/Users/xiko/sup-eligibility-api/node_modules/.pnpm/axios@1.9.0/node_modules/axios/lib/core/Axios.js:45:41)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at DerivedLogger.logger.slackNotify (/Users/xiko/sup-eligibility-api/src/utils/logger.ts:66:5)","status":429},"level":"error","message":"Failed to send Slack notification","timestamp":"2025-05-24T08:38:31.473Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T08:38:58.090Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T08:38:58.093Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T08:42:46.441Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T08:42:46.444Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T08:43:18.497Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T08:43:18.499Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T08:43:30.476Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T08:43:30.478Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0xEe5c044517c364031Ef59024307bd15fFc160463"},"timestamp":"2025-05-24T08:43:34.321Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-24T08:43:34.322Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-24T08:43:34.323Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-24T08:43:34.324Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-24T08:43:34.354Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-24T08:43:34.356Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-24T08:43:34.357Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-24T08:43:34.357Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-24T08:43:34.358Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-24T08:43:34.359Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-24T08:43:34.360Z"}
+{"level":"info","message":"allAllocations in _checkEligibility: ","timestamp":"2025-05-24T08:43:36.607Z"}
+{"level":"info","message":"Getting locker address for 0xEe5c044517c364031Ef59024307bd15fFc160463 from the blockchain","timestamp":"2025-05-24T08:43:38.311Z"}
+{"error":{},"level":"error","message":"Failed to get locker address for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:43:38.311Z"}
+{"level":"info","message":"lockerAddresses in _checkEligibility: ","timestamp":"2025-05-24T08:43:38.312Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:43:38.312Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:43:38.312Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:43:38.312Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:43:38.312Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:43:38.312Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:43:38.312Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:43:38.312Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:43:38.312Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-24T08:43:38.312Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-24T08:43:38.312Z"}
+{"level":"warn","message":"GET /eligibility 500 3994ms","timestamp":"2025-05-24T08:43:38.315Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T08:44:41.066Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T08:44:41.068Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T08:44:47.964Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T08:44:47.966Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T08:44:54.283Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T08:44:54.284Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0xEe5c044517c364031Ef59024307bd15fFc160463"},"timestamp":"2025-05-24T08:45:57.072Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-24T08:45:57.073Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-24T08:45:57.075Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-24T08:45:57.075Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-24T08:45:57.104Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-24T08:45:57.105Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-24T08:45:57.106Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-24T08:45:57.107Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-24T08:45:57.108Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-24T08:45:57.108Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-24T08:45:57.109Z"}
+{"level":"info","message":"allAllocations in _checkEligibility: ","timestamp":"2025-05-24T08:46:00.226Z"}
+{"level":"info","message":"Getting locker address for 0xEe5c044517c364031Ef59024307bd15fFc160463 from the blockchain","timestamp":"2025-05-24T08:46:01.702Z"}
+{"error":{},"level":"error","message":"Failed to get locker address for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:46:01.702Z"}
+{"level":"info","message":"lockerAddresses in _checkEligibility: ","timestamp":"2025-05-24T08:46:01.703Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:46:01.703Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:46:01.703Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:46:01.703Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:46:01.703Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:46:01.703Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:46:01.703Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:46:01.703Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T08:46:01.703Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-24T08:46:01.704Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-24T08:46:01.704Z"}
+{"level":"warn","message":"GET /eligibility 500 4635ms","timestamp":"2025-05-24T08:46:01.707Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T08:46:30.366Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T08:46:30.368Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0xEe5c044517c364031Ef59024307bd15fFc160463"},"timestamp":"2025-05-24T08:46:32.237Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-24T08:46:32.238Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-24T08:46:32.239Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-24T08:46:32.239Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-24T08:46:32.272Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-24T08:46:32.273Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-24T08:46:32.274Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-24T08:46:32.275Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-24T08:46:32.275Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-24T08:46:32.276Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-24T08:46:32.277Z"}
+{"level":"info","message":"allAllocations in _checkEligibility: ","timestamp":"2025-05-24T08:46:33.534Z"}
+{"level":"info","message":"Getting locker address for 0xEe5c044517c364031Ef59024307bd15fFc160463 from the blockchain","timestamp":"2025-05-24T08:46:35.052Z"}
+{"error":{},"level":"error","message":"Failed to get locker addresses","timestamp":"2025-05-24T08:46:35.052Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Failed to get locker addresses for addresses: 0xEe5c044517c364031Ef59024307bd15fFc160463: Cannot read properties of undefined (reading 'client')","timestamp":"2025-05-24T08:46:35.053Z"}
+{"level":"info","message":"lockerAddresses in _checkEligibility: ","timestamp":"2025-05-24T08:46:35.053Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-24T08:46:35.053Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-24T08:46:35.053Z"}
+{"level":"warn","message":"GET /eligibility 500 2819ms","timestamp":"2025-05-24T08:46:35.056Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T08:48:52.034Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T08:48:52.036Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0xEe5c044517c364031Ef59024307bd15fFc160463"},"timestamp":"2025-05-24T08:48:54.412Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-24T08:48:54.413Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-24T08:48:54.414Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-24T08:48:54.414Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-24T08:48:54.441Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-24T08:48:54.443Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-24T08:48:54.444Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-24T08:48:54.444Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-24T08:48:54.445Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-24T08:48:54.446Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-24T08:48:54.447Z"}
+{"level":"info","message":"allAllocations in _checkEligibility: ","timestamp":"2025-05-24T08:48:57.058Z"}
+{"level":"info","message":"Getting locker address for 0xEe5c044517c364031Ef59024307bd15fFc160463 from the blockchain","timestamp":"2025-05-24T08:48:58.445Z"}
+{"level":"info","message":"using the address  : 0xA6694cAB43713287F7735dADc940b555db9d39D9","timestamp":"2025-05-24T08:48:58.445Z"}
+{"level":"info","message":"using the abi      : [object Object]","timestamp":"2025-05-24T08:48:58.446Z"}
+{"level":"info","message":"using the function : getUserLocker","timestamp":"2025-05-24T08:48:58.446Z"}
+{"level":"info","message":"using the args     : 0xee5c044517c364031ef59024307bd15ffc160463","timestamp":"2025-05-24T08:48:58.446Z"}
+{"error":{},"level":"error","message":"Failed to get locker addresses","timestamp":"2025-05-24T08:48:58.446Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Failed to get locker addresses for addresses: 0xEe5c044517c364031Ef59024307bd15fFc160463: Cannot read properties of undefined (reading 'client')","timestamp":"2025-05-24T08:48:58.446Z"}
+{"level":"info","message":"lockerAddresses in _checkEligibility: ","timestamp":"2025-05-24T08:48:58.447Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-24T08:48:58.447Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-24T08:48:58.447Z"}
+{"level":"warn","message":"GET /eligibility 500 4041ms","timestamp":"2025-05-24T08:48:58.453Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T11:11:03.777Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T11:11:03.780Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T11:11:27.920Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T11:11:27.923Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T11:11:31.473Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T11:11:31.476Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T11:11:33.031Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T11:11:33.033Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0xEe5c044517c364031Ef59024307bd15fFc160463"},"timestamp":"2025-05-24T11:11:43.574Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-24T11:11:43.575Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-24T11:11:43.576Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-24T11:11:43.577Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-24T11:11:43.613Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-24T11:11:43.615Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-24T11:11:43.615Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-24T11:11:43.616Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-24T11:11:43.617Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-24T11:11:43.618Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-24T11:11:43.619Z"}
+{"level":"info","message":"allAllocations in _checkEligibility: ","timestamp":"2025-05-24T11:11:46.226Z"}
+{"level":"info","message":"Getting locker address for 0xEe5c044517c364031Ef59024307bd15fFc160463 from the blockchain","timestamp":"2025-05-24T11:11:48.646Z"}
+{"level":"info","message":"using the address  : 0xA6694cAB43713287F7735dADc940b555db9d39D9","timestamp":"2025-05-24T11:11:48.646Z"}
+{"level":"info","message":"using the abi      : [object Object]","timestamp":"2025-05-24T11:11:48.646Z"}
+{"level":"info","message":"using the function : getUserLocker","timestamp":"2025-05-24T11:11:48.647Z"}
+{"level":"info","message":"using the args     : 0xee5c044517c364031ef59024307bd15ffc160463","timestamp":"2025-05-24T11:11:48.647Z"}
+{"error":{},"level":"error","message":"Failed to get locker addresses","timestamp":"2025-05-24T11:11:48.647Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Failed to get locker addresses for addresses: 0xEe5c044517c364031Ef59024307bd15fFc160463: Cannot read properties of undefined (reading 'client')","timestamp":"2025-05-24T11:11:48.647Z"}
+{"level":"info","message":"lockerAddresses in _checkEligibility: ","timestamp":"2025-05-24T11:11:48.648Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-24T11:11:48.648Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-24T11:11:48.648Z"}
+{"level":"warn","message":"GET /eligibility 500 5083ms","timestamp":"2025-05-24T11:11:48.657Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T11:13:04.743Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T11:13:04.745Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T11:13:21.330Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T11:13:21.332Z"}
+{"level":"info","message":"about to create client","timestamp":"2025-05-24T11:15:22.313Z"}
+{"level":"info","message":"using the baseRpcUrl: https://base-mainnet.rpc.x.superfluid.dev/","timestamp":"2025-05-24T11:15:22.315Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T11:15:22.323Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T11:15:22.324Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0xEe5c044517c364031Ef59024307bd15fFc160463"},"timestamp":"2025-05-24T11:15:24.343Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-24T11:15:24.344Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-24T11:15:24.346Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-24T11:15:24.346Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-24T11:15:24.376Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-24T11:15:24.378Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-24T11:15:24.379Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-24T11:15:24.379Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-24T11:15:24.380Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-24T11:15:24.381Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-24T11:15:24.382Z"}
+{"level":"info","message":"allAllocations in _checkEligibility: ","timestamp":"2025-05-24T11:15:26.891Z"}
+{"level":"info","message":"Getting locker address for 0xEe5c044517c364031Ef59024307bd15fFc160463 from the blockchain","timestamp":"2025-05-24T11:15:29.273Z"}
+{"level":"info","message":"using the address  : 0xA6694cAB43713287F7735dADc940b555db9d39D9","timestamp":"2025-05-24T11:15:29.274Z"}
+{"level":"info","message":"using the abi      : [object Object]","timestamp":"2025-05-24T11:15:29.274Z"}
+{"level":"info","message":"using the function : getUserLocker","timestamp":"2025-05-24T11:15:29.274Z"}
+{"level":"info","message":"using the args     : 0xee5c044517c364031ef59024307bd15ffc160463","timestamp":"2025-05-24T11:15:29.274Z"}
+{"error":{},"level":"error","message":"Failed to get locker addresses","timestamp":"2025-05-24T11:15:29.274Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Failed to get locker addresses for addresses: 0xEe5c044517c364031Ef59024307bd15fFc160463: Cannot read properties of undefined (reading 'client')","timestamp":"2025-05-24T11:15:29.275Z"}
+{"level":"info","message":"lockerAddresses in _checkEligibility: ","timestamp":"2025-05-24T11:15:29.275Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-24T11:15:29.275Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-24T11:15:29.276Z"}
+{"level":"warn","message":"GET /eligibility 500 4937ms","timestamp":"2025-05-24T11:15:29.280Z"}
+{"level":"info","message":"about to create client","timestamp":"2025-05-24T11:15:59.674Z"}
+{"level":"info","message":"using the baseRpcUrl: https://base-mainnet.rpc.x.superfluid.dev/","timestamp":"2025-05-24T11:15:59.676Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T11:15:59.709Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T11:15:59.710Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0xEe5c044517c364031Ef59024307bd15fFc160463"},"timestamp":"2025-05-24T11:16:01.083Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-24T11:16:01.083Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-24T11:16:01.086Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-24T11:16:01.086Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-24T11:16:01.120Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-24T11:16:01.122Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-24T11:16:01.123Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-24T11:16:01.124Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-24T11:16:01.125Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-24T11:16:01.125Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-24T11:16:01.126Z"}
+{"level":"info","message":"allAllocations in _checkEligibility: ","timestamp":"2025-05-24T11:16:02.843Z"}
+{"level":"info","message":"Getting locker address for 0xEe5c044517c364031Ef59024307bd15fFc160463 from the blockchain","timestamp":"2025-05-24T11:16:04.328Z"}
+{"level":"info","message":"using the address  : 0xA6694cAB43713287F7735dADc940b555db9d39D9","timestamp":"2025-05-24T11:16:04.328Z"}
+{"level":"info","message":"using the abi      : [object Object]","timestamp":"2025-05-24T11:16:04.328Z"}
+{"level":"info","message":"using the function : getUserLocker","timestamp":"2025-05-24T11:16:04.328Z"}
+{"level":"info","message":"using the args     : 0xee5c044517c364031ef59024307bd15ffc160463","timestamp":"2025-05-24T11:16:04.328Z"}
+{"error":{},"level":"error","message":"Failed to get locker addresses","timestamp":"2025-05-24T11:16:04.329Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Failed to get locker addresses for addresses: 0xEe5c044517c364031Ef59024307bd15fFc160463: Cannot read properties of undefined (reading 'client')","timestamp":"2025-05-24T11:16:04.329Z"}
+{"level":"info","message":"lockerAddresses in _checkEligibility: ","timestamp":"2025-05-24T11:16:04.329Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-24T11:16:04.329Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-24T11:16:04.330Z"}
+{"level":"warn","message":"GET /eligibility 500 3250ms","timestamp":"2025-05-24T11:16:04.333Z"}
+{"level":"info","message":"about to create client","timestamp":"2025-05-24T11:16:34.336Z"}
+{"level":"info","message":"using the baseRpcUrl: https://base-mainnet.rpc.x.superfluid.dev/","timestamp":"2025-05-24T11:16:34.338Z"}
+{"level":"info","message":"client created","timestamp":"2025-05-24T11:16:34.339Z"}
+{"level":"info","message":"client: [object Object]","timestamp":"2025-05-24T11:16:34.339Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T11:16:34.347Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T11:16:34.347Z"}
+{"level":"info","message":"about to create client","timestamp":"2025-05-24T11:16:39.201Z"}
+{"level":"info","message":"using the baseRpcUrl: https://base-mainnet.rpc.x.superfluid.dev/","timestamp":"2025-05-24T11:16:39.203Z"}
+{"level":"info","message":"client created","timestamp":"2025-05-24T11:16:39.204Z"}
+{"level":"info","message":"client: [object Object]","timestamp":"2025-05-24T11:16:39.204Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T11:16:39.237Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T11:16:39.237Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0xEe5c044517c364031Ef59024307bd15fFc160463"},"timestamp":"2025-05-24T11:17:14.968Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-24T11:17:14.968Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-24T11:17:14.970Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-24T11:17:14.970Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-24T11:17:15.003Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-24T11:17:15.005Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-24T11:17:15.006Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-24T11:17:15.007Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-24T11:17:15.008Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-24T11:17:15.009Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-24T11:17:15.009Z"}
+{"level":"info","message":"allAllocations in _checkEligibility: ","timestamp":"2025-05-24T11:17:17.562Z"}
+{"level":"info","message":"Getting locker address for 0xEe5c044517c364031Ef59024307bd15fFc160463 from the blockchain","timestamp":"2025-05-24T11:17:19.041Z"}
+{"level":"info","message":"using the address  : 0xA6694cAB43713287F7735dADc940b555db9d39D9","timestamp":"2025-05-24T11:17:19.041Z"}
+{"level":"info","message":"using the abi      : [object Object]","timestamp":"2025-05-24T11:17:19.041Z"}
+{"level":"info","message":"using the function : getUserLocker","timestamp":"2025-05-24T11:17:19.042Z"}
+{"level":"info","message":"using the args     : 0xee5c044517c364031ef59024307bd15ffc160463","timestamp":"2025-05-24T11:17:19.042Z"}
+{"error":{},"level":"error","message":"Failed to get locker addresses","timestamp":"2025-05-24T11:17:19.042Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Failed to get locker addresses for addresses: 0xEe5c044517c364031Ef59024307bd15fFc160463: Cannot read properties of undefined (reading 'client')","timestamp":"2025-05-24T11:17:19.042Z"}
+{"level":"info","message":"lockerAddresses in _checkEligibility: ","timestamp":"2025-05-24T11:17:19.043Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-24T11:17:19.043Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-24T11:17:19.043Z"}
+{"level":"warn","message":"GET /eligibility 500 4082ms","timestamp":"2025-05-24T11:17:19.049Z"}
+{"level":"info","message":"about to create client","timestamp":"2025-05-24T11:18:13.866Z"}
+{"level":"info","message":"using the baseRpcUrl: https://base-mainnet.rpc.x.superfluid.dev/","timestamp":"2025-05-24T11:18:13.869Z"}
+{"level":"info","message":"client created","timestamp":"2025-05-24T11:18:13.870Z"}
+{"level":"info","message":"client: [object Object]","timestamp":"2025-05-24T11:18:13.870Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T11:18:13.881Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T11:18:13.881Z"}
+{"level":"info","message":"about to create client","timestamp":"2025-05-24T11:20:26.991Z"}
+{"level":"info","message":"using the baseRpcUrl: https://base-mainnet.rpc.x.superfluid.dev/","timestamp":"2025-05-24T11:20:26.993Z"}
+{"level":"info","message":"client created","timestamp":"2025-05-24T11:20:26.994Z"}
+{"level":"info","message":"client: [object Object]","timestamp":"2025-05-24T11:20:26.994Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T11:20:27.002Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T11:20:27.003Z"}
+{"level":"info","message":"about to create client","timestamp":"2025-05-24T11:21:10.509Z"}
+{"level":"info","message":"using the baseRpcUrl: https://base-mainnet.rpc.x.superfluid.dev/","timestamp":"2025-05-24T11:21:10.511Z"}
+{"level":"info","message":"client created","timestamp":"2025-05-24T11:21:10.512Z"}
+{"level":"info","message":"client: [object Object]","timestamp":"2025-05-24T11:21:10.512Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T11:21:10.521Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T11:21:10.521Z"}
+{"level":"info","message":"about to create client","timestamp":"2025-05-24T11:21:25.520Z"}
+{"level":"info","message":"using the baseRpcUrl: https://base-mainnet.rpc.x.superfluid.dev/","timestamp":"2025-05-24T11:21:25.531Z"}
+{"level":"info","message":"client created","timestamp":"2025-05-24T11:21:25.539Z"}
+{"level":"info","message":"client: [object Object]","timestamp":"2025-05-24T11:21:25.542Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T11:21:25.633Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T11:21:25.633Z"}
+{"level":"info","message":"about to create client","timestamp":"2025-05-24T11:21:36.208Z"}
+{"level":"info","message":"using the baseRpcUrl: https://base-mainnet.rpc.x.superfluid.dev/","timestamp":"2025-05-24T11:21:36.210Z"}
+{"level":"info","message":"client created","timestamp":"2025-05-24T11:21:36.211Z"}
+{"level":"info","message":"client: [object Object]","timestamp":"2025-05-24T11:21:36.211Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T11:21:36.221Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T11:21:36.221Z"}
+{"level":"info","message":"about to create client","timestamp":"2025-05-24T11:21:56.714Z"}
+{"level":"info","message":"using the baseRpcUrl: https://base-mainnet.rpc.x.superfluid.dev/","timestamp":"2025-05-24T11:21:56.716Z"}
+{"level":"info","message":"client created","timestamp":"2025-05-24T11:21:56.716Z"}
+{"level":"info","message":"client: [object Object]","timestamp":"2025-05-24T11:21:56.717Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T11:21:56.724Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T11:21:56.724Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0xEe5c044517c364031Ef59024307bd15fFc160463"},"timestamp":"2025-05-24T11:22:00.210Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-24T11:22:00.210Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-24T11:22:00.211Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-24T11:22:00.212Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-24T11:22:00.239Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-24T11:22:00.241Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-24T11:22:00.242Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-24T11:22:00.242Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-24T11:22:00.243Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-24T11:22:00.244Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-24T11:22:00.244Z"}
+{"level":"info","message":"allAllocations in _checkEligibility: ","timestamp":"2025-05-24T11:22:01.267Z"}
+{"level":"info","message":"Getting locker address for 0xEe5c044517c364031Ef59024307bd15fFc160463 from the blockchain","timestamp":"2025-05-24T11:22:02.355Z"}
+{"level":"info","message":"using the address  : 0xA6694cAB43713287F7735dADc940b555db9d39D9","timestamp":"2025-05-24T11:22:02.355Z"}
+{"level":"info","message":"using the abi      : [object Object]","timestamp":"2025-05-24T11:22:02.355Z"}
+{"level":"info","message":"using the function : getUserLocker","timestamp":"2025-05-24T11:22:02.355Z"}
+{"level":"info","message":"using the args     : 0xee5c044517c364031ef59024307bd15ffc160463","timestamp":"2025-05-24T11:22:02.356Z"}
+{"error":{},"level":"error","message":"Failed to get locker address for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T11:22:02.356Z"}
+{"level":"info","message":"lockerAddresses in _checkEligibility: ","timestamp":"2025-05-24T11:22:02.356Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T11:22:02.356Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T11:22:02.356Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T11:22:02.356Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T11:22:02.356Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T11:22:02.356Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T11:22:02.356Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T11:22:02.356Z"}
+{"level":"info","message":"No locker address found for 0xEe5c044517c364031Ef59024307bd15fFc160463","timestamp":"2025-05-24T11:22:02.357Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-24T11:22:02.357Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-24T11:22:02.357Z"}
+{"level":"warn","message":"GET /eligibility 500 2151ms","timestamp":"2025-05-24T11:22:02.360Z"}
+{"error":{"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"data":"{\"attachments\":[{\"color\":\"#FF0000\",\"text\":\":x: [DEV] Error in eligibility check endpoint: Failed to check eligibility: Cannot read properties of undefined (reading 'client')\",\"footer\":\"Eligibility API 2025-05-24T11:22:02.359Z\"}]}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Accept-Encoding":"gzip, compress, deflate, br","Content-Length":"229","Content-Type":"application/json","User-Agent":"axios/1.9.0"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"https://hooks.slack.com/services/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","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 429","name":"AxiosError","stack":"AxiosError: Request failed with status code 429\n    at settle (/Users/xiko/sup-eligibility-api/node_modules/.pnpm/axios@1.9.0/node_modules/axios/lib/core/settle.js:19:12)\n    at IncomingMessage.handleStreamEnd (/Users/xiko/sup-eligibility-api/node_modules/.pnpm/axios@1.9.0/node_modules/axios/lib/adapters/http.js:599:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1359:12)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)\n    at Axios.request (/Users/xiko/sup-eligibility-api/node_modules/.pnpm/axios@1.9.0/node_modules/axios/lib/core/Axios.js:45:41)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at DerivedLogger.logger.slackNotify (/Users/xiko/sup-eligibility-api/src/utils/logger.ts:66:5)","status":429},"level":"error","message":"Failed to send Slack notification","timestamp":"2025-05-24T11:22:03.036Z"}
+{"level":"info","message":"about to create client","timestamp":"2025-05-24T11:22:32.690Z"}
+{"level":"info","message":"using the baseRpcUrl: https://base-mainnet.rpc.x.superfluid.dev/","timestamp":"2025-05-24T11:22:32.693Z"}
+{"level":"info","message":"client created","timestamp":"2025-05-24T11:22:32.693Z"}
+{"level":"info","message":"client: [object Object]","timestamp":"2025-05-24T11:22:32.693Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-24T11:22:32.701Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-24T11:22:32.701Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0xEe5c044517c364031Ef59024307bd15fFc160463"},"timestamp":"2025-05-24T11:22:38.123Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-24T11:22:38.124Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-24T11:22:38.125Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-24T11:22:38.126Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-24T11:22:38.154Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-24T11:22:38.156Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-24T11:22:38.157Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-24T11:22:38.157Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-24T11:22:38.159Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-24T11:22:38.159Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-24T11:22:38.160Z"}
+{"level":"info","message":"allAllocations in _checkEligibility: ","timestamp":"2025-05-24T11:22:38.890Z"}
+{"level":"info","message":"Getting locker address for 0xEe5c044517c364031Ef59024307bd15fFc160463 from the blockchain","timestamp":"2025-05-24T11:22:40.003Z"}
+{"level":"info","message":"using the address  : 0xA6694cAB43713287F7735dADc940b555db9d39D9","timestamp":"2025-05-24T11:22:40.003Z"}
+{"level":"info","message":"using the abi      : [object Object]","timestamp":"2025-05-24T11:22:40.003Z"}
+{"level":"info","message":"using the function : getUserLocker","timestamp":"2025-05-24T11:22:40.004Z"}
+{"level":"info","message":"using the args     : 0xee5c044517c364031ef59024307bd15ffc160463","timestamp":"2025-05-24T11:22:40.004Z"}
+{"error":{},"level":"error","message":"Failed to get locker addresses","timestamp":"2025-05-24T11:22:40.004Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Failed to get locker addresses for addresses: 0xEe5c044517c364031Ef59024307bd15fFc160463: Cannot read properties of undefined (reading 'getClient')","timestamp":"2025-05-24T11:22:40.004Z"}
+{"level":"info","message":"lockerAddresses in _checkEligibility: ","timestamp":"2025-05-24T11:22:40.004Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-24T11:22:40.005Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-24T11:22:40.005Z"}
+{"level":"warn","message":"GET /eligibility 500 1884ms","timestamp":"2025-05-24T11:22:40.007Z"}
+{"error":{"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"data":"{\"attachments\":[{\"color\":\"#FF0000\",\"text\":\":x: [DEV] Error in eligibility check endpoint: Failed to check eligibility: Cannot read properties of undefined (reading 'client')\",\"footer\":\"Eligibility API 2025-05-24T11:22:40.006Z\"}]}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Accept-Encoding":"gzip, compress, deflate, br","Content-Length":"229","Content-Type":"application/json","User-Agent":"axios/1.9.0"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"https://hooks.slack.com/services/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","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 429","name":"AxiosError","stack":"AxiosError: Request failed with status code 429\n    at settle (/Users/xiko/sup-eligibility-api/node_modules/.pnpm/axios@1.9.0/node_modules/axios/lib/core/settle.js:19:12)\n    at IncomingMessage.handleStreamEnd (/Users/xiko/sup-eligibility-api/node_modules/.pnpm/axios@1.9.0/node_modules/axios/lib/adapters/http.js:599:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1359:12)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)\n    at Axios.request (/Users/xiko/sup-eligibility-api/node_modules/.pnpm/axios@1.9.0/node_modules/axios/lib/core/Axios.js:45:41)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at DerivedLogger.logger.slackNotify (/Users/xiko/sup-eligibility-api/src/utils/logger.ts:66:5)","status":429},"level":"error","message":"Failed to send Slack notification","timestamp":"2025-05-24T11:22:40.560Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0xEe5c044517c364031Ef59024307bd15fFc160463"},"timestamp":"2025-05-26T09:40:04.510Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"bankless","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-26T09:40:04.522Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-26T09:40:04.528Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-26T09:40:04.528Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-26T09:40:04.548Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-26T09:40:04.549Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-26T09:40:04.550Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-26T09:40:04.559Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-26T09:40:04.560Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-26T09:40:04.561Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-26T09:40:04.562Z"}
+{"level":"info","message":"allAllocations in _checkEligibility: ","timestamp":"2025-05-26T09:40:05.766Z"}
+{"level":"info","message":"Getting locker address for 0xEe5c044517c364031Ef59024307bd15fFc160463 from the blockchain","timestamp":"2025-05-26T09:40:07.132Z"}
+{"level":"info","message":"using the address  : 0xA6694cAB43713287F7735dADc940b555db9d39D9","timestamp":"2025-05-26T09:40:07.133Z"}
+{"level":"info","message":"using the abi      : [object Object]","timestamp":"2025-05-26T09:40:07.133Z"}
+{"level":"info","message":"using the function : getUserLocker","timestamp":"2025-05-26T09:40:07.133Z"}
+{"level":"info","message":"using the args     : 0xee5c044517c364031ef59024307bd15ffc160463","timestamp":"2025-05-26T09:40:07.133Z"}
+{"error":{},"level":"error","message":"Failed to get locker addresses","timestamp":"2025-05-26T09:40:07.134Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Failed to get locker addresses for addresses: 0xEe5c044517c364031Ef59024307bd15fFc160463: Cannot read properties of undefined (reading 'getClient')","timestamp":"2025-05-26T09:40:07.134Z"}
+{"level":"info","message":"lockerAddresses in _checkEligibility: ","timestamp":"2025-05-26T09:40:07.134Z"}
+{"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-26T09:40:07.134Z"}
+{"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-26T09:40:07.134Z"}
+{"level":"warn","message":"GET /eligibility 500 2629ms","timestamp":"2025-05-26T09:40:07.136Z"}

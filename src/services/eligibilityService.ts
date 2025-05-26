@@ -1,5 +1,5 @@
 import stackApiService from './stack/stackApiService';
-import blockchainService from './blockchain/blockchainService';
+import BlockchainService from './blockchain/blockchainService';
 import logger from '../utils/logger';
 import config from '../config';
 import { AddressEligibility, PointSystemEligibility, StackAllocation } from '../models/types';
@@ -17,12 +17,7 @@ class EligibilityService {
    */
   async checkEligibility(addresses: string[]): Promise<AddressEligibility[]> {
     try {
-      // Use memoization for production, direct call for development
-      if (config.nodeEnv === 'production') {
-        return await this.checkEligibilityMemoized(addresses);
-      } else {
-        return await this._checkEligibility(addresses);
-      }
+      return await this.checkEligibilityMemoized(addresses);
     } catch (error) {
       logger.error('Failed to check eligibility', { error });
       throw new Error(`Failed to check eligibility: ${error instanceof Error ? error.message : 'Unknown error'}`);
@@ -41,23 +36,24 @@ class EligibilityService {
     // Fetch allocations from Stack API
     const allAllocations = await stackApiService.fetchAllAllocations(addresses);
 
+    logger.info("allAllocations in _checkEligibility: ", allAllocations);
     // Auto-assign points to addresses with < POINT_THRESHOLD points
     const newCommunityAllocations = await this.autoAssignPoints(addresses, allAllocations);
     allAllocations.set(COMMUNITY_ACTIVATION_ID, newCommunityAllocations);
-    
     // Get locker addresses
     let lockerAddresses: Map<string, string> = new Map();
     try {
-      lockerAddresses = await blockchainService.getLockerAddresses(addresses);
+      lockerAddresses = await BlockchainService.getLockerAddressesMemoized(addresses);
     } catch (error) {
       logger.error('Failed to get locker addresses', { error });
       logger.slackNotify(`Failed to get locker addresses for addresses: ${addresses.join(', ')}: ${error instanceof Error ? error.message : 'Unknown error'}`);
     }
     
+    logger.info("lockerAddresses in _checkEligibility: ", lockerAddresses);
     // Check claim status on blockchain
     let allClaimStatuses: Map<string, Map<number, bigint>> = new Map();
     try {
-      allClaimStatuses = await blockchainService.checkAllClaimStatuses(lockerAddresses);
+      allClaimStatuses = await BlockchainService.checkAllClaimStatuses(lockerAddresses);
     } catch (error) {
       logger.error('Failed to get claim statuses', { error });
       logger.slackNotify(`Failed to get claim statuses for addresses: ${addresses.join(', ')}: ${error instanceof Error ? error.message : 'Unknown error'}`);
@@ -65,7 +61,7 @@ class EligibilityService {
     
     // Fetch total units for each point system
     for (const pointSystem of config.pointSystems) {
-      const totalUnits = await blockchainService.getTotalUnitsMemoized(pointSystem.gdaPoolAddress);
+      const totalUnits = await BlockchainService.getTotalUnitsMemoized(pointSystem.gdaPoolAddress);
       pointSystem.totalUnits = Number(totalUnits);
     }
     
@@ -189,7 +185,7 @@ class EligibilityService {
 
       try {
         // Get user's transaction count from blockchain
-        const userNonce = await blockchainService.getUserNonce(address as `0x${string}`);
+        const userNonce = await BlockchainService.getUserNonce(address as `0x${string}`);
         
         // If points are below threshold, assign more points
         if (currentPoints < POINT_THRESHOLD && userNonce > NONCE_THRESHOLD) {

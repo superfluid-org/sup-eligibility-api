@@ -11,8 +11,7 @@ const UBARecipients_1 = require("../../utils/UBARecipients");
 const cache_1 = require("../../config/cache");
 const formatUtils_1 = require("./formatUtils");
 const p_memoize_1 = __importDefault(require("p-memoize"));
-const COMMUNITY_ACTIVATION_ID = 7370;
-const { THRESHOLD_TIME_PERIOD } = config_1.default;
+const { COMMUNITY_ACTIVATION_ID, THRESHOLD_TIME_PERIOD, STACK_EVENT_ADD_POINTS_URL } = config_1.default;
 class StackApiService {
     constructor() {
         this.baseUrl = config_1.default.stackApiBaseUrl;
@@ -80,7 +79,7 @@ class StackApiService {
      */
     async assignPoints(address, points, eventName = "universal_allocation") {
         try {
-            const url = `https://track.stack.so/event`;
+            const url = STACK_EVENT_ADD_POINTS_URL;
             const uniqueId = `${eventName.toLowerCase().replace(/_/g, '-')}-${address.toLowerCase()}`;
             logger_1.default.info(`Assigning ${points} points to ${address} in point system ${COMMUNITY_ACTIVATION_ID}`);
             const data = [{
@@ -147,7 +146,7 @@ class StackApiService {
  * This is separated to allow for memoization
  */
 const _getStackActivityForAllPointSystems = async (address) => {
-    return await Promise.all(config_1.default.pointSystems.map((pointSystem) => _getStackActivity(address, pointSystem.id)));
+    return await Promise.all(config_1.default.pointSystems.map((pointSystem) => getStackActivityMemoized(address, pointSystem.id)));
 };
 /**
  * Private implementation of getStackActivity

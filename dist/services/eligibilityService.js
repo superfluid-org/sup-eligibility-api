@@ -78,7 +78,7 @@ class EligibilityService {
         }
         // Fetch total units for each point system
         for (const pointSystem of config_1.default.pointSystems) {
-            const totalUnits = await blockchainService_1.default.getTotalUnits(pointSystem.gdaPoolAddress);
+            const totalUnits = await blockchainService_1.default.getTotalUnitsMemoized(pointSystem.gdaPoolAddress);
             pointSystem.totalUnits = Number(totalUnits);
         }
         // Combine the data for each address

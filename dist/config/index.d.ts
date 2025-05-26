@@ -4,7 +4,6 @@ interface PointSystem {
     gdaPoolAddress: string;
     flowrate: bigint;
     totalUnits: number;
-    apiKey: string;
 }
 export declare function getStackApiKey(pointSystemId: number): string;
 declare const config: {
@@ -23,6 +22,7 @@ declare const config: {
     COMMUNITY_ACTIVATION_ID: number;
     THRESHOLD_TIME_PERIOD: number;
     THRESHOLD_MAX_USERS: number;
+    STACK_EVENT_ADD_POINTS_URL: string;
     adminApiKey: string;
     defaultRateLimit: {
         requestsPerMinute: number;

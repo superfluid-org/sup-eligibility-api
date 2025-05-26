@@ -8,6 +8,8 @@ const chains_1 = require("viem/chains");
 const config_1 = __importDefault(require("../../config"));
 const logger_1 = __importDefault(require("../../utils/logger"));
 const axios_1 = __importDefault(require("axios"));
+const p_memoize_1 = __importDefault(require("p-memoize"));
+const cache_1 = require("../../config/cache");
 const gdaPoolAbi = [
     {
         inputs: [{ name: "memberAddr", type: "address" }],
@@ -54,6 +56,15 @@ class BlockchainService {
             address,
         });
         return Number(transactionCount);
+    }
+    // get total units from memoized cache
+    // keep cache in memory for 1 hour
+    async getTotalUnitsMemoized(gdaPoolAddress) {
+        const cachedValue = (0, p_memoize_1.default)(this.getTotalUnits, {
+            cache: cache_1.oneHourCache,
+            cacheKey: () => `totalUnits:${gdaPoolAddress}`
+        });
+        return cachedValue(gdaPoolAddress);
     }
     /**
      * Check the number of total units in a GDA pool

@@ -3,124 +3,131 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.latestRecipients = exports.getHighLevelStats = exports.checkRecipients = exports.getRecipient = exports.updateRecipient = exports.addRecipient = exports.getRecipients = exports.getStoredRecipients = void 0;
+exports.latestRecipients = exports.getHighLevelStats = exports.getRecipient = exports.updateRecipient = exports.addRecipient = exports.getRecipients = exports.getStoredRecipients = void 0;
 const fs_1 = __importDefault(require("fs"));
 const path_1 = __importDefault(require("path"));
 const logger_1 = __importDefault(require("./logger"));
-const blockchainService_1 = __importDefault(require("../services/blockchain/blockchainService"));
-const STORAGE_FILE = 'UniversalPointRecipients.json';
-const STORAGE_PATH = path_1.default.join(__dirname, '..', '..', 'data', STORAGE_FILE);
+// Path to the data file
+const DATA_FILE_PATH = path_1.default.join(__dirname, '../../data/UniversalPointRecipients.json');
+// Ensure the data directory exists
+const dataDir = path_1.default.dirname(DATA_FILE_PATH);
+if (!fs_1.default.existsSync(dataDir)) {
+    fs_1.default.mkdirSync(dataDir, { recursive: true });
+}
 /**
- * Read all recipients from storage file
+ * Get stored recipients from the data file
+ * @returns Array of recipients
  */
 const getStoredRecipients = () => {
     try {
-        if (!fs_1.default.existsSync(STORAGE_PATH)) {
+        if (!fs_1.default.existsSync(DATA_FILE_PATH)) {
+            // If file doesn't exist, create it with empty array
+            fs_1.default.writeFileSync(DATA_FILE_PATH, JSON.stringify([], null, 2));
             return [];
         }
-        const data = fs_1.default.readFileSync(STORAGE_PATH, 'utf8');
+        const data = fs_1.default.readFileSync(DATA_FILE_PATH, 'utf8');
         return JSON.parse(data);
     }
     catch (error) {
-        logger_1.default.error('Failed to read recipients from storage', { error });
+        logger_1.default.error('Failed to read recipients data', { error });
         return [];
     }
 };
 exports.getStoredRecipients = getStoredRecipients;
+/**
+ * Get recipients data, optionally with cache control
+ * @param cache Whether to use cached data (default: true)
+ * @returns Promise with recipients data
+ */
 const getRecipients = async (cache) => {
-    await (0, exports.checkRecipients)(cache);
+    // TODO: Implement cache logic if needed
     return (0, exports.getStoredRecipients)();
 };
 exports.getRecipients = getRecipients;
 /**
- * Write recipients to storage file
- * note: this is a private function and should only be called by the addRecipient and updateRecipient functions
- *       it is not exported from the module
- *       this is to avoid accidental corruption of the storage file
+ * Save recipients data to file
+ * @param recipients Array of recipients to save
+ * @returns Boolean indicating success
  */
 const saveRecipients = (recipients) => {
     try {
-        // Create the directory if it doesn't exist
-        const dir = path_1.default.dirname(STORAGE_PATH);
-        if (!fs_1.default.existsSync(dir)) {
-            fs_1.default.mkdirSync(dir, { recursive: true });
-        }
-        fs_1.default.writeFileSync(STORAGE_PATH, JSON.stringify(recipients, null, 2));
+        fs_1.default.writeFileSync(DATA_FILE_PATH, JSON.stringify(recipients, null, 2));
         return true;
     }
     catch (error) {
-        logger_1.default.error('Failed to save recipients to storage', { error });
-        logger_1.default.slackNotify(`Failed to save recipients to storage ${error}`, 'error');
+        logger_1.default.error('Failed to save recipients data', { error });
         return false;
     }
 };
 /**
- * Add a new recipient to storage
+ * Add a new recipient to the data file
+ * @param recipient Recipient data to add
+ * @returns Boolean indicating success
  */
 const addRecipient = (recipient) => {
     if (!recipient.address) {
-        logger_1.default.error('Recipient address is required');
+        logger_1.default.error('Attempted to add recipient without address');
         return false;
-    }
-    if (!recipient.topUpDate) {
-        recipient.topUpDate = new Date().toISOString();
     }
     try {
         const recipients = (0, exports.getStoredRecipients)();
+        const now = new Date().toISOString();
         // Check if recipient already exists
         const existingIndex = recipients.findIndex(r => r.address.toLowerCase() === recipient.address.toLowerCase());
-        if (existingIndex !== -1) {
-            // Update the existing recipient instead of adding a duplicate
+        if (existingIndex >= 0) {
+            // Update existing recipient
             recipients[existingIndex] = {
                 ...recipients[existingIndex],
-                ...recipient
+                ...recipient,
+                topUpDate: now,
             };
         }
         else {
-            // Create a complete recipient object with all required fields
-            const completeRecipient = {
+            // Add new recipient
+            recipients.push({
                 address: recipient.address,
-                topUpDate: recipient.topUpDate,
-                lockerAddress: recipient.lockerAddress,
-                lockerCheckedDate: recipient.lockerCheckedDate,
-                claimed: recipient.claimed,
-                lastChecked: recipient.lastChecked
-            };
-            recipients.push(completeRecipient);
+                topUpDate: now,
+                ...recipient,
+            });
         }
         return saveRecipients(recipients);
     }
     catch (error) {
-        logger_1.default.error('Failed to add recipient to storage', { error });
+        logger_1.default.error('Failed to add recipient', { error, recipient });
         return false;
     }
 };
 exports.addRecipient = addRecipient;
 /**
- * Update an existing recipient in storage
+ * Update an existing recipient
+ * @param address Address of the recipient to update
+ * @param updates Updates to apply
+ * @returns Boolean indicating success
  */
 const updateRecipient = (address, updates) => {
     try {
         const recipients = (0, exports.getStoredRecipients)();
-        const index = recipients.findIndex(r => r.address.toLowerCase() === address.toLowerCase());
-        if (index === -1) {
-            logger_1.default.error(`Recipient ${address} not found in storage`);
+        const recipientIndex = recipients.findIndex(r => r.address.toLowerCase() === address.toLowerCase());
+        if (recipientIndex === -1) {
+            logger_1.default.warn(`Attempted to update non-existent recipient: ${address}`);
             return false;
         }
-        recipients[index] = {
-            ...recipients[index],
-            ...updates
+        recipients[recipientIndex] = {
+            ...recipients[recipientIndex],
+            ...updates,
         };
         return saveRecipients(recipients);
     }
     catch (error) {
-        logger_1.default.error('Failed to update recipient in storage', { error });
+        logger_1.default.error('Failed to update recipient', { error, address, updates });
         return false;
     }
 };
 exports.updateRecipient = updateRecipient;
 /**
- * Get a single recipient by address
+ * Get a recipient by address
+ * @param address Ethereum address
+ * @returns Recipient data or null if not found
  */
 const getRecipient = (address) => {
     try {
@@ -128,60 +135,36 @@ const getRecipient = (address) => {
         return recipients.find(r => r.address.toLowerCase() === address.toLowerCase()) || null;
     }
     catch (error) {
-        logger_1.default.error('Failed to get recipient from storage', { error });
+        logger_1.default.error('Failed to get recipient', { error, address });
         return null;
     }
 };
 exports.getRecipient = getRecipient;
 /**
- * Check all recipients for eligibility and update their statuses
+ * Get high-level statistics about recipients
+ * @returns Promise with statistics
  */
-const checkRecipients = async (cacheInvalidation) => {
-    const recipients = (0, exports.getStoredRecipients)();
-    const cacheInvalidationDuration = cacheInvalidation || 1000 * 60 * 20;
-    // Filter recipients that need to be checked (no locker or stale data)
-    const recipientsToCheck = recipients.filter(r => !r.lockerAddress &&
-        (!r.lastChecked || new Date(r.lastChecked) < new Date(Date.now() - cacheInvalidationDuration)));
-    if (recipientsToCheck.length === 0) {
-        return;
-    }
-    const recipientAddressList = recipientsToCheck.map(r => r.address);
-    try {
-        const lockerAddresses = await blockchainService_1.default.getLockers(recipientAddressList);
-        for (const recipient of recipientsToCheck) {
-            const lockerAddress = lockerAddresses.get(recipient.address.toLowerCase());
-            if (lockerAddress) {
-                (0, exports.updateRecipient)(recipient.address, {
-                    lockerAddress: lockerAddress.lockerAddress,
-                    lockerCheckedDate: lockerAddress.blockTimestamp
-                });
-            }
-            recipient.lastChecked = new Date().toISOString();
-            (0, exports.updateRecipient)(recipient.address, { lastChecked: recipient.lastChecked });
-        }
-    }
-    catch (error) {
-        logger_1.default.error('Failed to check recipients', { error });
-    }
-};
-exports.checkRecipients = checkRecipients;
 const getHighLevelStats = async () => {
     const recipients = await (0, exports.getRecipients)();
     return {
         totalRecipients: recipients.length,
-        totalRecipientsWithLocker: recipients.filter(r => r.lockerAddress).length,
-        totalRecipientsWithClaim: recipients.filter(r => r.claimed).length
+        totalRecipientsWithClaim: recipients.filter(r => r.claimed).length,
     };
 };
 exports.getHighLevelStats = getHighLevelStats;
 /**
- * Check how many recipients have been topped up in a given time period
- * @param timePeriod - The time period in seconds
+ * Get recipients that were topped up within the specified time period
+ * @param timePeriod Time period in seconds
+ * @returns Array of recipients
  */
 const latestRecipients = (timePeriod) => {
     const recipients = (0, exports.getStoredRecipients)();
-    const recipientsToCheck = recipients.filter(r => (new Date(r.topUpDate)).getTime() > (new Date()).getTime() - timePeriod * 1000);
-    return recipientsToCheck;
+    const now = new Date();
+    const cutoff = new Date(now.getTime() - timePeriod * 1000);
+    return recipients.filter(recipient => {
+        const topUpDate = new Date(recipient.topUpDate);
+        return topUpDate >= cutoff;
+    });
 };
 exports.latestRecipients = latestRecipients;
 //# sourceMappingURL=UBARecipients.js.map

@@ -68,6 +68,7 @@ class StackApiService {
       config.pointSystems.map(async (pointSystem) => {
         try {
           const allocations = await this.fetchAllocations(pointSystem.id, addresses);
+          console.log("allocations for point system ", pointSystem.id, " : ", allocations);
           allAllocations.set(pointSystem.id, allocations);
         } catch (error) {
           logger.error(`Error fetching allocations for point system ${pointSystem.id}`, { error });

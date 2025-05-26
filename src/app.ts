@@ -2,8 +2,10 @@ import express, { Express } from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import eligibilityController from './controllers/eligibilityController';
+import adminController from './controllers/adminController';
 import { errorHandler } from './middleware/errorHandler';
 import { requestLogger } from './middleware/requestLogger';
+import { apiKeyAuth } from './middleware/apiKeyAuth';
 import config from './config';
 import logger from './utils/logger';
 
@@ -21,23 +23,34 @@ app.use(requestLogger); // Log requests
 // Define routes
 
 /**
- * Endpoint: GET /eligibility
- * Description: Checks eligibility status
- * Controller: eligibilityController.checkEligibility
- */
-app.get('/eligibility', eligibilityController.checkEligibility);
-
-/**
  * Endpoint: GET /health
  * Description: Verifies if the API is functioning correctly
  * Controller: eligibilityController.healthCheck
+ * Note: This endpoint is public for monitoring purposes
  */
 app.get('/health', eligibilityController.healthCheck);
+
+// Admin routes - protected by admin API key (checked in the controller)
+app.get('/admin/keys', adminController.listApiKeys);
+app.get('/admin/usage', adminController.getApiUsage);
+app.post('/admin/keys/generate', adminController.generateApiKey);
+
+// Apply API key authentication to all protected routes below
+app.use(apiKeyAuth);
+
+/**
+ * Endpoint: GET /eligibility
+ * Description: Checks eligibility status
+ * Controller: eligibilityController.checkEligibility
+ * Authentication: API key required
+ */
+app.get('/eligibility', eligibilityController.checkEligibility);
 
 /**
  * Endpoint: GET /point-systems
  * Description: Retrieves available point systems
  * Controller: eligibilityController.getPointSystems
+ * Authentication: API key required
  */
 app.get('/point-systems', eligibilityController.getPointSystems);
 
@@ -47,6 +60,7 @@ app.get('/point-systems', eligibilityController.getPointSystems);
  * Query Parameters:
  *   - address (required): String - Ethereum address to query
  *   - point-system-id (optional): Number - Specific point system ID to filter results
+ * Authentication: API key required
  */
 app.get('/stack-activity', async (req: express.Request, res: express.Response) => {
   const address = req.query.address as string;

@@ -11,6 +11,7 @@ declare class BlockchainService {
      * @returns Promise with transaction count
      */
     getUserNonce(address: `0x${string}`): Promise<number>;
+    getTotalUnitsMemoized(gdaPoolAddress: string): Promise<bigint>;
     /**
      * Check the number of total units in a GDA pool
      * @param gdaPoolAddress Address of the GDA pool contract

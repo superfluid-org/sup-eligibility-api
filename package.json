@@ -9,7 +9,8 @@
     "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
     "test": "jest",
     "lint": "eslint . --ext .ts",
-    "format": "prettier --write \"src/**/*.ts\""
+    "format": "prettier --write \"src/**/*.ts\"",
+    "ssh-deploy": "GIT_URL=https://github.com/superfluid-org/sup-eligibility-api ./sf-deploy-https.sh"
   },
   "dependencies": {
     "@slack/webhook": "^7.0.5",

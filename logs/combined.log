@@ -1107,3 +1107,9 @@
 {"error":{},"level":"error","message":"Failed to check eligibility","timestamp":"2025-05-26T09:40:07.134Z"}
 {"error":{},"level":"error","message":"Error in eligibility check endpoint","timestamp":"2025-05-26T09:40:07.134Z"}
 {"level":"warn","message":"GET /eligibility 500 2629ms","timestamp":"2025-05-26T09:40:07.136Z"}
+{"level":"info","message":"about to create client","timestamp":"2025-05-27T11:27:34.031Z"}
+{"level":"info","message":"using the baseRpcUrl: https://base-mainnet.rpc.x.superfluid.dev/","timestamp":"2025-05-27T11:27:34.034Z"}
+{"level":"info","message":"client created successfully","timestamp":"2025-05-27T11:27:34.036Z"}
+{"level":"info","message":"client: [object Object]","timestamp":"2025-05-27T11:27:34.036Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-27T11:27:34.045Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-27T11:27:34.045Z"}

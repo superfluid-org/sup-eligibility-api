@@ -5,7 +5,7 @@ declare class EligibilityService {
      * @param addresses Array of Ethereum addresses
      * @returns Promise with eligibility data for each address
      */
-    checkEligibility(addresses: string[]): Promise<AddressEligibility[]>;
+    checkEligibility(addresses: string[], apiConsumerName: string): Promise<AddressEligibility[]>;
     /**
      * Private implementation of eligibility check
      * @param addresses Array of Ethereum addresses

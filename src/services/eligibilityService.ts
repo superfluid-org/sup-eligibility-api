@@ -150,7 +150,7 @@ class EligibilityService {
         pMemoize(this._checkEligibility.bind(this), {
           cache: halfDayCache,
           cacheKey: () => `check-eligibility-${address.toLowerCase()}`
-        })([address, apiConsumerName])
+        })([address], apiConsumerName)
       )
     );
     return results.flat();

@@ -10,7 +10,7 @@ declare const config: {
     port: string | number;
     nodeEnv: string;
     apiBaseUrl: string;
-    ethereumRpcUrl: string;
+    baseRpcUrl: string;
     slackWebhookUrl: string;
     stackApiBaseUrl: string;
     GDAForwarder: string;

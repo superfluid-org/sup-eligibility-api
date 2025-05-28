@@ -7,7 +7,6 @@ const viem_1 = require("viem");
 const chains_1 = require("viem/chains");
 const config_1 = __importDefault(require("../../config"));
 const logger_1 = __importDefault(require("../../utils/logger"));
-const axios_1 = __importDefault(require("axios"));
 const p_memoize_1 = __importDefault(require("p-memoize"));
 const cache_1 = require("../../config/cache");
 const gdaPoolAbi = [
@@ -28,9 +27,9 @@ const gdaPoolAbi = [
 ];
 const getUserLockerAbi = [
     {
-        inputs: [{ name: "memberAddr", type: "address" }],
+        inputs: [{ name: "user", type: "address" }],
         name: "getUserLocker",
-        outputs: [{ name: "", type: "bool" }, { name: "", type: "address" }],
+        outputs: [{ name: "isCreated", type: "bool" }, { name: "lockerAddress", type: "address" }],
         stateMutability: "view",
         type: "function"
     }
@@ -41,9 +40,26 @@ const getUserLockerAbi = [
  */
 class BlockchainService {
     constructor() {
-        this.client = (0, viem_1.createPublicClient)({
+        try {
+            logger_1.default.info("about to create client");
+            logger_1.default.info(`using the baseRpcUrl: ${config_1.default.baseRpcUrl}`);
+            this.client = (0, viem_1.createPublicClient)({
+                chain: chains_1.base,
+                transport: (0, viem_1.http)(config_1.default.baseRpcUrl)
+            });
+            logger_1.default.info("client created successfully");
+            logger_1.default.info(`client: ${this.client}`);
+        }
+        catch (error) {
+            logger_1.default.error("Failed to create blockchain client", { error });
+            throw error;
+        }
+    }
+    getClient() {
+        // @ts-ignore
+        return (0, viem_1.createPublicClient)({
             chain: chains_1.base,
-            transport: (0, viem_1.http)(config_1.default.ethereumRpcUrl)
+            transport: (0, viem_1.http)(config_1.default.baseRpcUrl)
         });
     }
     /**
@@ -60,7 +76,7 @@ class BlockchainService {
     // get total units from memoized cache
     // keep cache in memory for 1 hour
     async getTotalUnitsMemoized(gdaPoolAddress) {
-        const cachedValue = (0, p_memoize_1.default)(this.getTotalUnits, {
+        const cachedValue = (0, p_memoize_1.default)(this.getTotalUnits.bind(this), {
             cache: cache_1.oneHourCache,
             cacheKey: () => `totalUnits:${gdaPoolAddress}`
         });
@@ -103,6 +119,30 @@ class BlockchainService {
         }
     }
     /**
+     * Get the locker addresses for multiple addresses (memoized)
+     * @param addresses Array of Ethereum addresses
+     * @returns Promise with locker addresses for each address
+     */
+    async getLockerAddressesMemoized(addresses) {
+        const lockerAddresses = new Map();
+        for (const address of addresses) {
+            lockerAddresses.set(address, await this.getLockerAddressMemoized(address));
+        }
+        return lockerAddresses;
+    }
+    /**
+     * Get the locker address for an address (memoized)
+     * @param address Ethereum address
+     * @returns Promise with locker address
+     */
+    async getLockerAddressMemoized(address) {
+        const cachedValue = (0, p_memoize_1.default)(this.getLockerAddress.bind(this), {
+            cache: cache_1.halfDayCache,
+            cacheKey: () => `lockerAddress:${address}`
+        });
+        return cachedValue(address);
+    }
+    /**
      * Get the locker addresses for multiple addresses
      * @param addresses Array of Ethereum addresses
      * @returns Promise with locker addresses for each address
@@ -110,17 +150,35 @@ class BlockchainService {
     async getLockerAddresses(addresses) {
         const lockerAddresses = new Map();
         for (const address of addresses) {
-            const [exists, lockerAddress] = await this.client.readContract({
+            const lockerAddress = await this.getLockerAddress(address);
+            lockerAddresses.set(address, lockerAddress);
+        }
+        return lockerAddresses;
+    }
+    async getLockerAddress(address) {
+        logger_1.default.info(`Getting locker address for ${address} from the blockchain`);
+        logger_1.default.info(`using the address  : ${config_1.default.lockerFactoryAddress}`);
+        logger_1.default.info(`using the abi      : ${getUserLockerAbi}`);
+        logger_1.default.info(`using the function : ${'getUserLocker'}`);
+        logger_1.default.info(`using the args     : ${address.toLowerCase()}`);
+        try {
+            const [exists, lockerAddress] = await this.getClient().readContract({
                 address: config_1.default.lockerFactoryAddress,
                 abi: getUserLockerAbi,
                 functionName: 'getUserLocker',
                 args: [address.toLowerCase()]
             });
-            if (exists) {
-                lockerAddresses.set(address, lockerAddress);
+            logger_1.default.info(`Locker address for ${address}, which exists: ${exists}, is ${lockerAddress}`);
+            if (!exists) {
+                logger_1.default.info(`No locker address found for ${address}`);
+                return "0x0000000000000000000000000000000000000000";
             }
+            return lockerAddress;
         }
-        return lockerAddresses;
+        catch (error) {
+            logger_1.default.error(`Failed to get locker address for ${address}`, { error });
+            return "0x0000000000000000000000000000000000000000";
+        }
     }
     /**
      * Check claim status for multiple addresses across all GDA pools
@@ -137,14 +195,14 @@ class BlockchainService {
         const promises = [];
         for (const [address, lockerAddress] of lockerAddresses.entries()) {
             for (const { id, gdaPoolAddress } of config_1.default.pointSystems) {
+                if (!lockerAddress || lockerAddress === "0x0000000000000000000000000000000000000000") {
+                    logger_1.default.info(`No locker address found for ${address}`);
+                    allClaimStatuses.get(address)?.set(id, BigInt(0));
+                    continue;
+                }
                 promises.push((async () => {
                     try {
-                        const memberUnits = await this.client.readContract({
-                            address: gdaPoolAddress,
-                            abi: gdaPoolAbi,
-                            functionName: 'getUnits',
-                            args: [lockerAddress]
-                        });
+                        const memberUnits = await this.checkClaimStatus(lockerAddress, gdaPoolAddress);
                         const statusMap = allClaimStatuses.get(address);
                         if (statusMap) {
                             statusMap.set(id, memberUnits);
@@ -164,55 +222,6 @@ class BlockchainService {
         // Wait for all promises to resolve
         await Promise.all(promises);
         return allClaimStatuses;
-    }
-    /**
-     * Get locker addresses from the subgraph
-     * @param addresses Array of Ethereum addresses
-     * @returns Promise with locker addresses and block timestamps
-     */
-    async getLockers(addresses) {
-        const lockerAddresses = new Map();
-        let hasMore = true;
-        let skip = 0;
-        const pageSize = 1000;
-        const query = `query MyQuery {
-      lockers(first: ${pageSize}, skip: ${skip}, orderBy: blockTimestamp, orderDirection: desc) {
-        lockerOwner
-        id
-        blockTimestamp
-      }
-    }`;
-        while (hasMore) {
-            try {
-                const response = await axios_1.default.post(config_1.default.LOCKER_GRAPH_URL, {
-                    query
-                });
-                const lockers = response.data?.data?.lockers || [];
-                // Process lockers and match with addresses we're looking for
-                for (const locker of lockers) {
-                    const ownerAddress = locker.lockerOwner.toLowerCase();
-                    if (addresses.some(addr => addr.toLowerCase() === ownerAddress)) {
-                        lockerAddresses.set(ownerAddress, { lockerAddress: locker.id, blockTimestamp: locker.blockTimestamp });
-                    }
-                }
-                // Check if we've found all addresses or need to fetch more pages
-                if (lockerAddresses.size === addresses.length || lockers.length < pageSize) {
-                    hasMore = false;
-                }
-                else {
-                    skip += pageSize;
-                }
-                // Exit early if we've found all addresses
-                if (lockerAddresses.size === addresses.length) {
-                    break;
-                }
-            }
-            catch (error) {
-                logger_1.default.error('Error fetching lockers from subgraph', { error });
-                hasMore = false;
-            }
-        }
-        return lockerAddresses;
     }
 }
 exports.default = new BlockchainService();

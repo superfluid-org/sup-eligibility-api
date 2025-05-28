@@ -80,7 +80,7 @@ const config = {
     // API settings
     apiBaseUrl: process.env.API_BASE_URL || 'http://localhost:3001',
     // External services
-    ethereumRpcUrl: process.env.ETHEREUM_RPC_URL || 'https://mainnet.base.org',
+    baseRpcUrl: process.env.BASE_RPC_URL || 'https://mainnet.base.org',
     slackWebhookUrl: process.env.SLACK_WEBHOOK_URL || '',
     stackApiBaseUrl: process.env.STACK_API_BASE_URL || 'https://athena.stack.so',
     // Blockchain contracts

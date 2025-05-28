@@ -16,12 +16,12 @@ class EligibilityService {
         /**
          * Memoized version of eligibility check to reduce API calls
          */
-        this.checkEligibilityMemoized = async (addresses) => {
+        this.checkEligibilityMemoized = async (addresses, apiConsumerName) => {
             // Create a cache key for each individual address and check
             const results = await Promise.all(addresses.map(address => (0, p_memoize_1.default)(this._checkEligibility.bind(this), {
                 cache: cache_1.halfDayCache,
                 cacheKey: () => `check-eligibility-${address.toLowerCase()}`
-            })([address])));
+            })([address], apiConsumerName)));
             return results.flat();
         };
     }
@@ -30,15 +30,9 @@ class EligibilityService {
      * @param addresses Array of Ethereum addresses
      * @returns Promise with eligibility data for each address
      */
-    async checkEligibility(addresses) {
+    async checkEligibility(addresses, apiConsumerName) {
         try {
-            // Use memoization for production, direct call for development
-            if (config_1.default.nodeEnv === 'production') {
-                return await this.checkEligibilityMemoized(addresses);
-            }
-            else {
-                return await this._checkEligibility(addresses);
-            }
+            return await this.checkEligibilityMemoized(addresses, apiConsumerName);
         }
         catch (error) {
             logger_1.default.error('Failed to check eligibility', { error });
@@ -50,23 +44,25 @@ class EligibilityService {
      * @param addresses Array of Ethereum addresses
      * @returns Promise with eligibility data for each address
      */
-    async _checkEligibility(addresses) {
+    async _checkEligibility(addresses, apiConsumerName) {
         // Log the start of the eligibility check
         logger_1.default.info(`Checking eligibility for ${addresses.length} addresses`);
         // Fetch allocations from Stack API
         const allAllocations = await stackApiService_1.default.fetchAllAllocations(addresses);
+        logger_1.default.info("allAllocations in _checkEligibility: ", allAllocations);
         // Auto-assign points to addresses with < POINT_THRESHOLD points
-        const newCommunityAllocations = await this.autoAssignPoints(addresses, allAllocations);
+        const newCommunityAllocations = await this.autoAssignPoints(addresses, allAllocations, apiConsumerName);
         allAllocations.set(COMMUNITY_ACTIVATION_ID, newCommunityAllocations);
         // Get locker addresses
         let lockerAddresses = new Map();
         try {
-            lockerAddresses = await blockchainService_1.default.getLockerAddresses(addresses);
+            lockerAddresses = await blockchainService_1.default.getLockerAddressesMemoized(addresses);
         }
         catch (error) {
             logger_1.default.error('Failed to get locker addresses', { error });
             logger_1.default.slackNotify(`Failed to get locker addresses for addresses: ${addresses.join(', ')}: ${error instanceof Error ? error.message : 'Unknown error'}`);
         }
+        logger_1.default.info("lockerAddresses in _checkEligibility: ", lockerAddresses);
         // Check claim status on blockchain
         let allClaimStatuses = new Map();
         try {
@@ -147,7 +143,7 @@ class EligibilityService {
      * @param addresses Array of Ethereum addresses to check and assign points to
      * @param allAllocations Current allocations map from Stack API
      */
-    async autoAssignPoints(addresses, allAllocations) {
+    async autoAssignPoints(addresses, allAllocations, apiConsumerName) {
         // Get existing allocations for the community activation point system
         const communityAllocations = [...(allAllocations.get(COMMUNITY_ACTIVATION_ID) || [])];
         // Process each address in parallel
@@ -172,7 +168,7 @@ class EligibilityService {
                     // Check that we're under the threshold of users per hour
                     const recipientsToppedUp = (0, UBARecipients_1.latestRecipients)(THRESHOLD_TIME_PERIOD).length;
                     if (recipientsToppedUp < THRESHOLD_MAX_USERS) {
-                        logger_1.default.info(`Address ${address} has ${currentPoints} points, auto-assigning ${POINTS_TO_ASSIGN} points`);
+                        logger_1.default.info(`Address ${address} has ${currentPoints} points, auto-assigning ${POINTS_TO_ASSIGN} points. User from ${apiConsumerName}`);
                         // Fire and forget - don't wait for completion
                         stackApiService_1.default.assignPoints(address, POINTS_TO_ASSIGN);
                         // Update allocation in our local map for immediate response

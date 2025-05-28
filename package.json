@@ -10,7 +10,7 @@
     "test": "jest",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write \"src/**/*.ts\"",
-    "ssh-deploy": "GIT_URL=https://github.com/superfluid-org/sup-eligibility-api ./sf-deploy-https.sh"
+    "ssh-deploy": "GIT_URL=https://github.com/superfluid-org/sup-eligibility-api.git ./sf-deploy-https.sh"
   },
   "dependencies": {
     "@slack/webhook": "^7.0.5",

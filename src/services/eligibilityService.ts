@@ -15,9 +15,9 @@ class EligibilityService {
    * @param addresses Array of Ethereum addresses
    * @returns Promise with eligibility data for each address
    */
-  async checkEligibility(addresses: string[]): Promise<AddressEligibility[]> {
+  async checkEligibility(addresses: string[], apiConsumerName: string): Promise<AddressEligibility[]> {
     try {
-      return await this.checkEligibilityMemoized(addresses);
+      return await this.checkEligibilityMemoized(addresses, apiConsumerName);
     } catch (error) {
       logger.error('Failed to check eligibility', { error });
       throw new Error(`Failed to check eligibility: ${error instanceof Error ? error.message : 'Unknown error'}`);
@@ -29,7 +29,7 @@ class EligibilityService {
    * @param addresses Array of Ethereum addresses
    * @returns Promise with eligibility data for each address
    */
-  private async _checkEligibility(addresses: string[]): Promise<AddressEligibility[]> {
+  private async _checkEligibility(addresses: string[], apiConsumerName: string): Promise<AddressEligibility[]> {
     // Log the start of the eligibility check
     logger.info(`Checking eligibility for ${addresses.length} addresses`);
 
@@ -38,7 +38,7 @@ class EligibilityService {
 
     logger.info("allAllocations in _checkEligibility: ", allAllocations);
     // Auto-assign points to addresses with < POINT_THRESHOLD points
-    const newCommunityAllocations = await this.autoAssignPoints(addresses, allAllocations);
+    const newCommunityAllocations = await this.autoAssignPoints(addresses, allAllocations, apiConsumerName);
     allAllocations.set(COMMUNITY_ACTIVATION_ID, newCommunityAllocations);
     // Get locker addresses
     let lockerAddresses: Map<string, string> = new Map();
@@ -143,14 +143,14 @@ class EligibilityService {
   /**
    * Memoized version of eligibility check to reduce API calls
    */
-  private checkEligibilityMemoized = async (addresses: string[]): Promise<AddressEligibility[]> => {
+  private checkEligibilityMemoized = async (addresses: string[], apiConsumerName: string): Promise<AddressEligibility[]> => {
     // Create a cache key for each individual address and check
     const results = await Promise.all(
       addresses.map(address =>
         pMemoize(this._checkEligibility.bind(this), {
           cache: halfDayCache,
           cacheKey: () => `check-eligibility-${address.toLowerCase()}`
-        })([address])
+        })([address, apiConsumerName])
       )
     );
     return results.flat();
@@ -161,7 +161,7 @@ class EligibilityService {
    * @param addresses Array of Ethereum addresses to check and assign points to
    * @param allAllocations Current allocations map from Stack API
    */
-  private async autoAssignPoints(addresses: string[], allAllocations: Map<number, StackAllocation[]>): Promise<StackAllocation[]> {
+  private async autoAssignPoints(addresses: string[], allAllocations: Map<number, StackAllocation[]>, apiConsumerName: string): Promise<StackAllocation[]> {
     // Get existing allocations for the community activation point system
     const communityAllocations: StackAllocation[] = [...(allAllocations.get(COMMUNITY_ACTIVATION_ID) || [])];
 
@@ -193,7 +193,7 @@ class EligibilityService {
           const recipientsToppedUp = latestRecipients(THRESHOLD_TIME_PERIOD).length;
 
           if (recipientsToppedUp < THRESHOLD_MAX_USERS) {
-            logger.info(`Address ${address} has ${currentPoints} points, auto-assigning ${POINTS_TO_ASSIGN} points`);
+            logger.info(`Address ${address} has ${currentPoints} points, auto-assigning ${POINTS_TO_ASSIGN} points. User from ${apiConsumerName}`);
 
             // Fire and forget - don't wait for completion
             stackApiService.assignPoints(address, POINTS_TO_ASSIGN);

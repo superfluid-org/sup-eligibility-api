@@ -57,7 +57,7 @@ class EligibilityController {
       }
                                                                                                                                                                                                                                                                                                                                                                  
       // Check eligibility
-      const results = await eligibilityService.checkEligibility(addresses);
+      const results = await eligibilityService.checkEligibility(addresses, req.apiKeyData?.name || "unclear");
 
       // Return results
       res.status(200).json({ results });

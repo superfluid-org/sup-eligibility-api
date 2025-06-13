@@ -181,7 +181,7 @@ class EligibilityService {
       // Get current point balance, defaulting to 0 if not found
       const currentPoints = existingAllocation?.points || 0;
       let finalPoints = currentPoints;
-      const NONCE_THRESHOLD = 5;
+      const NONCE_THRESHOLD = 15;
 
       try {
         // Get user's transaction count from blockchain

@@ -18,5 +18,10 @@
     "bankless": {
       "/eligibility": 1
     }
+  },
+  "2025-05-28": {
+    "eligibility-ui": {
+      "/eligibility": 1
+    }
   }
 }

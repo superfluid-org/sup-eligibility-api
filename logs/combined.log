@@ -1113,3 +1113,52 @@
 {"level":"info","message":"client: [object Object]","timestamp":"2025-05-27T11:27:34.036Z"}
 {"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-27T11:27:34.045Z"}
 {"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-27T11:27:34.045Z"}
+{"level":"info","message":"about to create client","timestamp":"2025-05-28T18:15:42.793Z"}
+{"level":"info","message":"using the baseRpcUrl: https://base-mainnet.rpc.x.superfluid.dev/","timestamp":"2025-05-28T18:15:42.797Z"}
+{"level":"info","message":"client created successfully","timestamp":"2025-05-28T18:15:42.798Z"}
+{"level":"info","message":"client: [object Object]","timestamp":"2025-05-28T18:15:42.798Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-28T18:15:42.839Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Eligibility API server started on port 3001","timestamp":"2025-05-28T18:15:42.839Z"}
+{"ip":"::1","level":"info","message":"GET /eligibility","query":{"addresses":"0x86278fE4960b6cb3EeE36BE7731001086c292506"},"timestamp":"2025-05-28T18:17:36.514Z","userAgent":"curl/8.4.0"}
+{"ip":"::1","keyName":"eligibility-ui","level":"info","message":"API key used","method":"GET","path":"/eligibility","timestamp":"2025-05-28T18:17:36.515Z"}
+{"level":"info","message":"Checking eligibility for 1 addresses","timestamp":"2025-05-28T18:17:36.516Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7691/allocations for 1 addresses","timestamp":"2025-05-28T18:17:36.516Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7695/allocations for 1 addresses","timestamp":"2025-05-28T18:17:36.558Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7696/allocations for 1 addresses","timestamp":"2025-05-28T18:17:36.559Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7703/allocations for 1 addresses","timestamp":"2025-05-28T18:17:36.560Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7712/allocations for 1 addresses","timestamp":"2025-05-28T18:17:36.560Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7702/allocations for 1 addresses","timestamp":"2025-05-28T18:17:36.561Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7704/allocations for 1 addresses","timestamp":"2025-05-28T18:17:36.562Z"}
+{"level":"info","message":"Fetching allocations from https://athena.stack.so/point-system/7692/allocations for 1 addresses","timestamp":"2025-05-28T18:17:36.562Z"}
+{"level":"info","message":"allAllocations in _checkEligibility: ","timestamp":"2025-05-28T18:17:37.773Z"}
+{"level":"info","message":"Getting locker address for 0x86278fE4960b6cb3EeE36BE7731001086c292506 from the blockchain","timestamp":"2025-05-28T18:17:39.091Z"}
+{"level":"info","message":"using the address  : 0xA6694cAB43713287F7735dADc940b555db9d39D9","timestamp":"2025-05-28T18:17:39.091Z"}
+{"level":"info","message":"using the abi      : [object Object]","timestamp":"2025-05-28T18:17:39.091Z"}
+{"level":"info","message":"using the function : getUserLocker","timestamp":"2025-05-28T18:17:39.092Z"}
+{"level":"info","message":"using the args     : 0x86278fe4960b6cb3eee36be7731001086c292506","timestamp":"2025-05-28T18:17:39.092Z"}
+{"level":"info","message":"Locker address for 0x86278fE4960b6cb3EeE36BE7731001086c292506, which exists: false, is 0x0000000000000000000000000000000000000000","timestamp":"2025-05-28T18:17:39.530Z"}
+{"level":"info","message":"No locker address found for 0x86278fE4960b6cb3EeE36BE7731001086c292506","timestamp":"2025-05-28T18:17:39.531Z"}
+{"level":"info","message":"lockerAddresses in _checkEligibility: ","timestamp":"2025-05-28T18:17:39.531Z"}
+{"level":"info","message":"No locker address found for 0x86278fE4960b6cb3EeE36BE7731001086c292506","timestamp":"2025-05-28T18:17:39.531Z"}
+{"level":"info","message":"No locker address found for 0x86278fE4960b6cb3EeE36BE7731001086c292506","timestamp":"2025-05-28T18:17:39.531Z"}
+{"level":"info","message":"No locker address found for 0x86278fE4960b6cb3EeE36BE7731001086c292506","timestamp":"2025-05-28T18:17:39.531Z"}
+{"level":"info","message":"No locker address found for 0x86278fE4960b6cb3EeE36BE7731001086c292506","timestamp":"2025-05-28T18:17:39.531Z"}
+{"level":"info","message":"No locker address found for 0x86278fE4960b6cb3EeE36BE7731001086c292506","timestamp":"2025-05-28T18:17:39.531Z"}
+{"level":"info","message":"No locker address found for 0x86278fE4960b6cb3EeE36BE7731001086c292506","timestamp":"2025-05-28T18:17:39.532Z"}
+{"level":"info","message":"No locker address found for 0x86278fE4960b6cb3EeE36BE7731001086c292506","timestamp":"2025-05-28T18:17:39.532Z"}
+{"level":"info","message":"No locker address found for 0x86278fE4960b6cb3EeE36BE7731001086c292506","timestamp":"2025-05-28T18:17:39.532Z"}
+{"level":"debug","message":"[SLACK NOTIFICATION SKIPPED IN DEV] Refreshed data for 0x86278fE4960b6cb3EeE36BE7731001086c292506 from stack.so","timestamp":"2025-05-28T18:17:42.575Z"}
+{"level":"info","message":"Eligibility check completed for 1 addresses","timestamp":"2025-05-28T18:17:42.575Z"}
+{"level":"info","message":"Check completed for 1 addresses","timestamp":"2025-05-28T18:17:42.576Z"}
+{"level":"info","message":"GET /eligibility 200 6062ms","timestamp":"2025-05-28T18:17:42.576Z"}
+{"level":"info","message":"about to create client","timestamp":"2025-05-28T18:20:18.615Z"}
+{"level":"info","message":"using the baseRpcUrl: https://base-mainnet.rpc.x.superfluid.dev/","timestamp":"2025-05-28T18:20:18.617Z"}
+{"level":"info","message":"client created successfully","timestamp":"2025-05-28T18:20:18.618Z"}
+{"level":"info","message":"client: [object Object]","timestamp":"2025-05-28T18:20:18.618Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-28T18:20:18.655Z"}
+{"error":{"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"data":"{\"attachments\":[{\"color\":\"#0000FF\",\"text\":\":information_source: [PROD] Eligibility API server started on port 3001\",\"footer\":\"Eligibility API 2025-05-28T18:20:18.655Z\"}]}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Accept-Encoding":"gzip, compress, deflate, br","Content-Length":"170","Content-Type":"application/json","User-Agent":"axios/1.9.0"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"https://hooks.slack.com/services/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","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (/Users/xiko/sup-eligibility-api/node_modules/.pnpm/axios@1.9.0/node_modules/axios/lib/core/settle.js:19:12)\n    at IncomingMessage.handleStreamEnd (/Users/xiko/sup-eligibility-api/node_modules/.pnpm/axios@1.9.0/node_modules/axios/lib/adapters/http.js:599:11)\n    at IncomingMessage.emit (node:events:523:35)\n    at endReadableNT (node:internal/streams/readable:1367:12)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)\n    at Axios.request (/Users/xiko/sup-eligibility-api/node_modules/.pnpm/axios@1.9.0/node_modules/axios/lib/core/Axios.js:45:41)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at DerivedLogger.logger.slackNotify (/Users/xiko/sup-eligibility-api/src/utils/logger.ts:66:5)","status":404},"level":"error","message":"Failed to send Slack notification","timestamp":"2025-05-28T18:20:19.417Z"}
+{"level":"info","message":"about to create client","timestamp":"2025-05-28T18:23:53.802Z"}
+{"level":"info","message":"using the baseRpcUrl: https://base-mainnet.rpc.x.superfluid.dev/","timestamp":"2025-05-28T18:23:53.805Z"}
+{"level":"info","message":"client created successfully","timestamp":"2025-05-28T18:23:53.805Z"}
+{"level":"info","message":"client: [object Object]","timestamp":"2025-05-28T18:23:53.805Z"}
+{"level":"info","message":"Eligibility API started on port 3001","timestamp":"2025-05-28T18:23:53.843Z"}

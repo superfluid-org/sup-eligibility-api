@@ -150,7 +150,7 @@ fi
 echo "📂 [REMOTE] Entering application directory: $APP_NAME"
 cd $APP_NAME
 echo "🔄 [REMOTE] Pulling latest code"
-git pull
+git fetch && git reset --hard origin/main
 if [ -f .nvmrc ]; then
   echo "🔧 [REMOTE] Using Node.js version from .nvmrc"
   nvm use
